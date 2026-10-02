@@ -1,28 +1,185 @@
 @use "./base.scss";
-@use "./themes";
 
-// Arrotondamento e spaziatura pulita per i tag mark (preserva lo sfondo originale)
-mark {
-  border-radius: 4px;
-  padding: 0.1em 0.35em;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
+// ==========================================
+// Cupertino / macOS Style (Inspired by Obsidian Cupertino Theme)
+// ==========================================
+
+:root {
+  --headerFont: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", sans-serif;
+  --bodyFont: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", sans-serif;
+  --codeFont: "JetBrains Mono", "SF Mono", Menlo, Monaco, Consolas, monospace;
 }
 
-// Contrasto testo mirato in Dark Mode (senza toccare gli sfondi giallo e viola)
+// 1. Tipografia e Titoli
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.022em;
+  font-weight: 700;
+}
+
+// 2. Barra di Ricerca (macOS Spotlight / Finder Style)
+.search-button {
+  border-radius: 8px !important;
+  border: 1px solid var(--lightgray) !important;
+  background-color: var(--light) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  
+  &:hover {
+    border-color: var(--gray) !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+}
+
+// 3. Explorer / Sidebar (macOS Finder Sidebar List)
+.explorer {
+  .folder-container,
+  li > a {
+    border-radius: 6px;
+    padding: 3px 8px;
+    transition: background-color 0.15s ease, color 0.15s ease;
+    
+    &:hover {
+      background-color: var(--highlight);
+      color: var(--secondary);
+    }
+  }
+
+  li > a[aria-current="page"],
+  li > a.active {
+    background-color: var(--highlight);
+    color: var(--secondary);
+    font-weight: 600;
+  }
+}
+
+// 4. Pillola Tag (Apple System Badges)
+a.internal.tag-link {
+  border-radius: 9999px;
+  padding: 2px 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: var(--lightgray);
+  color: var(--darkgray);
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+  text-decoration: none;
+  
+  &:hover {
+    background-color: var(--highlight);
+    color: var(--secondary);
+    border-color: var(--secondary);
+  }
+}
+
+// 5. Callouts (Apple Notes / Cupertino Cards)
+.callout {
+  border-radius: 10px !important;
+  border-left-width: 4px !important;
+  margin: 1.2rem 0 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  &[data-callout="note"],
+  &[data-callout="info"],
+  &[data-callout="todo"] {
+    --color: rgb(0, 122, 255);
+    --border: rgba(0, 122, 255, 0.35);
+    --bg: rgba(0, 122, 255, 0.06);
+  }
+
+  &[data-callout="tip"],
+  &[data-callout="summary"],
+  &[data-callout="success"] {
+    --color: rgb(52, 199, 89);
+    --border: rgba(52, 199, 89, 0.35);
+    --bg: rgba(52, 199, 89, 0.06);
+  }
+
+  &[data-callout="warning"],
+  &[data-callout="question"] {
+    --color: rgb(255, 149, 0);
+    --border: rgba(255, 149, 0, 0.35);
+    --bg: rgba(255, 149, 0, 0.06);
+  }
+
+  &[data-callout="danger"],
+  &[data-callout="failure"],
+  &[data-callout="bug"] {
+    --color: rgb(255, 59, 48);
+    --border: rgba(255, 59, 48, 0.35);
+    --bg: rgba(255, 59, 48, 0.06);
+  }
+
+  &[data-callout="example"] {
+    --color: rgb(175, 82, 222);
+    --border: rgba(175, 82, 222, 0.35);
+    --bg: rgba(175, 82, 222, 0.06);
+  }
+}
+
+// 6. Evidenziazioni HTML (Preserva sfondi oro e viola originali delle note)
+mark {
+  border-radius: 4px;
+  padding: 0.12em 0.35em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  font-weight: 600;
+}
+
+// Adattamento contrasto testo per Dark Mode senza toccare lo sfondo
 [saved-theme="dark"] {
   font[color="#cc8800"] {
-    color: #ffbf35;
+    color: #ffbe38 !important;
   }
   
   font[color="#9a54c1"] {
-    color: #cd90ff;
+    color: #cd90ff !important;
+  }
+
+  .callout {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   }
 }
 
-// Scroll orizzontale pulito per formule matematiche KaTeX lunghe
+// 7. Formule Matematiche KaTeX (Scroll fluido orizzontale)
 .katex-display {
   overflow-x: auto;
   overflow-y: hidden;
-  padding: 0.4em 0;
+  padding: 0.5em 0;
+  margin: 1.2em 0;
+}
+
+// 8. Tabelle & Matrice PACRAR
+table {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--lightgray);
+  margin: 1.5rem 0;
+  
+  th {
+    background-color: var(--lightgray);
+    font-weight: 600;
+    padding: 8px 12px;
+  }
+  
+  td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--lightgray);
+  }
+}
+
+// 9. Pulsanti UI (Darkmode, Readermode)
+button.darkmode,
+button.readermode {
+  border-radius: 8px;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+  
+  &:hover {
+    background-color: var(--highlight);
+    transform: scale(1.05);
+  }
 }
