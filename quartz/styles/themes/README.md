@@ -1,20 +1,21 @@
-# Things 3
+# Minimal
 
-- Theme: Things 3
-- Author: <a href="https://medium.com/@paralloid" target="_blank" rel="noopener noreferrer">Denis Volkov</a>
+- Theme: Minimal
+- Author: <a href="https://twitter.com/kepano" target="_blank" rel="noopener noreferrer">@kepano</a>
+- Support the author: <a href="https://www.buymeacoffee.com/kepano" target="_blank" rel="noopener noreferrer">Donate</a>
 
 ## Preview
 
-[Open live preview (Quartz)](https://quartz-themes.github.io/things-3/)
+[Open live preview (Quartz)](https://quartz-themes.github.io/minimal/)
 
-[Open live preview (Publish)](https://publish.saberzero.one/things-3)
+[Open live preview (Publish)](https://publish.saberzero.one/minimal)
 
 ## Usage (Quartz)
 
 ### npm package (Recommended)
 
 ```bash
-npm install @quartz-themes/core @quartz-themes/things-3
+npm install @quartz-themes/core @quartz-themes/minimal
 ```
 
 Then add the plugin to your `quartz.config.yaml`:
@@ -23,7 +24,7 @@ Then add the plugin to your `quartz.config.yaml`:
 plugins:
   - source: "@quartz-themes/core"
     options:
-      theme: "things-3"
+      theme: "minimal"
       mode: "both"
 ```
 
@@ -31,7 +32,7 @@ plugins:
 
 ```yaml
 env:
-  THEME_NAME: things-3
+  THEME_NAME: minimal
 ```
 
 ```yaml

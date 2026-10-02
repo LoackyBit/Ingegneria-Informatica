@@ -1,2 +1,28 @@
 @use "./base.scss";
 @use "./themes";
+
+// Arrotondamento e spaziatura pulita per i tag mark (preserva lo sfondo originale)
+mark {
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+// Contrasto testo mirato in Dark Mode (senza toccare gli sfondi giallo e viola)
+[saved-theme="dark"] {
+  font[color="#cc8800"] {
+    color: #ffbf35;
+  }
+  
+  font[color="#9a54c1"] {
+    color: #cd90ff;
+  }
+}
+
+// Scroll orizzontale pulito per formule matematiche KaTeX lunghe
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.4em 0;
+}
