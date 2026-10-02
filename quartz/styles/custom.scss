@@ -1,3 +1,51 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// Cupertino & Apple Minimal Enhancements
+mark {
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  font-weight: 600;
+}
+
+// Ottimizzazione contrasto evidenziazioni in Dark Mode
+[saved-theme="dark"] {
+  mark {
+    background: rgba(255, 193, 69, 0.22) !important;
+    
+    font[color="#cc8800"] {
+      color: #ffc038 !important;
+    }
+    
+    font[color="#9a54c1"] {
+      color: #cd8fff !important;
+    }
+  }
+
+  // Callout styling dark mode
+  .callout {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-left-width: 4px;
+  }
+}
+
+// Callout styling light mode
+.callout {
+  border-radius: 8px;
+  margin: 1.2rem 0;
+  transition: all 0.2s ease;
+}
+
+// KaTeX math readability
+.katex-display {
+  margin: 1.2em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5em 0;
+}
+
+// Subtle card styling for explorer and backlinks
+.sidebar {
+  font-size: 0.95rem;
+}
