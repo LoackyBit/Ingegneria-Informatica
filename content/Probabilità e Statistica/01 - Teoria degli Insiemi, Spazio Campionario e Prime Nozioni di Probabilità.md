@@ -88,13 +88,13 @@ Le operazioni insiemistiche associano o modificano collezioni di elementi all'in
 
 > [!danger] Definizione: Operazioni Insiemistiche Fondamentali
 > Siano $A$ e $B$ sottoinsiemi di uno spazio ambiente $\Omega$ ($A, B \subseteq \Omega$):
-> 1. **<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Unione</b></font></mark> ($A \cup B$):** raccoglie gli elementi che appartengono ad $A$, oppure a $B$, o a entrambi (disgiunzione inclusiva $\lor$):
+> 1. <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Unione</b></font></mark> ($A \cup B$): raccoglie gli elementi che appartengono ad $A$, oppure a $B$, o a entrambi (disgiunzione inclusiva $\lor$):
 >    $$A \cup B := \{x \in \Omega \mid x \in A \lor x \in B\}$$
-> 2. **<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Intersezione</b></font></mark> ($A \cap B$):** raccoglie esclusivamente gli elementi comuni condivisi simultaneamente sia da $A$ sia da $B$ (congiunzione logica $\land$):
+> 2. <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Intersezione</b></font></mark> ($A \cap B$): raccoglie esclusivamente gli elementi comuni condivisi simultaneamente sia da $A$ sia da $B$ (congiunzione logica $\land$):
 >    $$A \cap B := \{x \in \Omega \mid x \in A \land x \in B\}$$
-> 3. **<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Complementare</b></font></mark> ($A^\complement$ o $\complement_\Omega(A)$):** raccoglie tutti gli elementi dello spazio ambiente $\Omega$ che non appartengono ad $A$:
+> 3. <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Complementare</b></font></mark> ($A^\complement$ o $\complement_\Omega(A)$): raccoglie tutti gli elementi dello spazio ambiente $\Omega$ che non appartengono ad $A$:
 >    $$A^\complement := \{x \in \Omega \mid x \notin A\}$$
-> 4. **<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Differenza Insiemistica</b></font></mark> ($A \setminus B$ o $A - B$):** individua gli elementi che stanno in $A$ e non appartengono a $B$:
+> 4. <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Differenza Insiemistica</b></font></mark> ($A \setminus B$ o $A - B$): individua gli elementi che stanno in $A$ e non appartengono a $B$:
 >    $$A \setminus B := \{x \in \Omega \mid x \in A \land x \notin B\}$$
 
 > [!tip]- Flashcard: Operazioni Insiemistiche Fondamentali
@@ -162,8 +162,8 @@ END
 ### 1. Fenomeno ed Esperimento Aleatorio
 
 > [!danger] Definizione: Fenomeno ed Esperimento Aleatorio
-> - Un **fenomeno aleatorio** è un processo reale caratterizzato da intrinseca incertezza, il cui esito specifico non è predicibile a priori con assoluta certezza deterministica (es. il lancio di una moneta o la durata di funzionamento di un calcolatore).
-> - Un **esperimento aleatorio** è la singola realizzazione o prova empirica controllata di un fenomeno aleatorio (es. compiere materialmente un lancio e registrare se sia uscito Testa o Croce).
+> - Un <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>fenomeno aleatorio</b></font></mark> è un processo reale caratterizzato da intrinseca incertezza, il cui esito specifico non è predicibile a priori con assoluta certezza deterministica (es. il lancio di una moneta o la durata di funzionamento di un calcolatore).
+> - Un <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>esperimento aleatorio</b></font></mark> è la singola realizzazione o prova empirica controllata di un fenomeno aleatorio (es. compiere materialmente un lancio e registrare se sia uscito Testa o Croce).
 
 > [!tip]- Flashcard: Fenomeno vs Esperimento Aleatorio
 > %%
@@ -179,8 +179,8 @@ END
 ### 2. Spazio Campionario ($\Omega$) ed Eventi Elementari
 
 > [!danger] Definizione: Spazio Campionario ed Evento Elementare
-> Lo **spazio campionario** $\Omega$ è l'insieme di tutti i possibili esiti atomici e mutuamente esclusivi di un esperimento aleatorio.
-> Ciascun singolo elemento $\omega \in \Omega$ prende il nome di **evento elementare**.
+> Lo <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>spazio campionario</b></font></mark> $\Omega$ è l'insieme di tutti i possibili esiti atomici e mutuamente esclusivi di un esperimento aleatorio.
+> Ciascun singolo elemento $\omega \in \Omega$ prende il nome di <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>evento elementare</b></font></mark>.
 
 > [!tip]- Flashcard: Spazio Campionario ed Eventi Elementari
 %%
@@ -206,14 +206,14 @@ END
 ### 3. Definizione Formale di Evento
 
 > [!danger] Definizione: Evento Aleatorio
-> Un **evento aleatorio** $E$ è un qualunque **sottoinsieme** dello spazio campionario $\Omega$:
+> Un <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>evento aleatorio</b></font></mark> $E$ è un qualunque **sottoinsieme** dello spazio campionario $\Omega$:
 > $$E \subseteq \Omega \iff E \in \mathcal{P}(\Omega)$$
-> - **Evento Certo ($\Omega$):** l'intero spazio campionario; si verifica sempre.
-> - **Evento Impossibile ($\emptyset$):** l'insieme vuoto privo di esiti; non si verifica mai.
-> - **Eventi Incompatibili (Mutuamente Esclusivi):** due eventi $A$ e $B$ tali che:
+> - <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Evento Certo</b></font></mark> ($\Omega$): l'intero spazio campionario; si verifica sempre.
+> - <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Evento Impossibile</b></font></mark> ($\emptyset$): l'insieme vuoto privo di esiti; non si verifica mai.
+> - <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Eventi Incompatibili</b></font></mark> (Mutuamente Esclusivi): due eventi $A$ e $B$ tali che:
 >   $$A \cap B = \emptyset$$
 >   I due eventi non possono verificarsi simultaneamente.
-> - **Eventi Esaustivi:** due o più eventi la cui unione coincide con l'intero spazio campionario ($A \cup B = \Omega$).
+> - <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Eventi Esaustivi</b></font></mark>: due o più eventi la cui unione coincide con l'intero spazio campionario ($A \cup B = \Omega$).
 
 > [!tip]- Flashcard: Tipologie di Eventi (Certo, Impossibile, Esaustivi)
 %%
