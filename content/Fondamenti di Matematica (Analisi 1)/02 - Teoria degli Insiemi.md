@@ -109,7 +109,7 @@ Questo assioma prescrive che due insiemi sono uguali se e solo se hanno gli stes
 Mentre l'assioma di estensionalità descrive la relazione tra insiemi, non garantisce l'esistenza di alcun oggetto nel discorso. L'<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>assioma dell'insieme vuoto</b></font></mark> assicura l'esistenza del primo ente matematico concreto \[[[Lezione 2 FdM.pdf#page=2|Dispensa p. 2]]].
 
 > [!error] Assioma 2: Assioma dell'Insieme Vuoto
-> Esiste (ed è unico) l'insieme che non possiede elementi. Tale insieme si chiama **insieme vuoto** e si denota con $\emptyset$:
+> Esiste (ed è unico) l'insieme che non possiede elementi. Tale insieme si chiama <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>insieme vuoto</b></font></mark> e si denota con $\emptyset$:
 > $$(\forall x) \, (x \notin \emptyset)$$
 
 > [!info] Osservazione: Derivabilità dell'Insieme Vuoto
@@ -135,15 +135,15 @@ Accanto alle nozioni primitive, introduciamo per definizione la relazione di <ma
 > [!danger] Definizione 1.1: Sottoinsieme (Inclusione Insiemistica)
 > Siano $A$ e $B$ due insiemi. Si scrive $B \subset A$ (oppure $B \subseteq A$) per denotare che:
 > $$(\forall x) \, (x \in B \implies x \in A)$$
-> e si dice che $B$ è un **sottoinsieme** di $A$ (o che $B$ è contenuto in $A$, o che $B$ è una parte di $A$).
-> Se $B \subset A$ e $B \ne A$, allora $B$ si dice **sottoinsieme proprio** di $A$.
+> e si dice che $B$ è un <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>sottoinsieme</b></font></mark> di $A$ (o che $B$ è contenuto in $A$, o che $B$ è una parte di $A$).
+> Se $B \subset A$ e $B \ne A$, allora $B$ si dice <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>sottoinsieme proprio</b></font></mark> di $A$.
 
 > [!example] Esempio 1.2: Inclusione dell'Insieme Vuoto e Riflessività
 > Sia $A$ un insieme generico. Valgono sempre le inclusioni:
 > $$\emptyset \subset A \quad \text{e} \quad A \subset A$$
 > 
 > **Dimostrazione Formale:**
-> 1. Per verificare che $\emptyset \subset A$, applichiamo la Definizione 1.1: dobbiamo provare che $(\forall x) \, (x \in \emptyset \implies x \in A)$. Per l'Assioma 2, la premessa $x \in \emptyset$ è falsa per ogni elemento $x$. Per la semantica dell'implicazione materiale nella logica proposizionale, una proposizione condizionale con premessa falsa è identicamente vera (*ex falso quodlibet*). Ne consegue che l'implicazione è vera per qualunque $x$, dimostrando che $\emptyset \subset A$.
+> 1. Per verificare che $\emptyset \subset A$, applichiamo la Definizione 1.1: dobbiamo provare che $(\forall x) \, (x \in \emptyset \implies x \in A)$. Per l'Assioma 2, la premessa $x \in \emptyset$ è falsa per ogni elemento $x$. Per la semantica dell'implicazione materiale nella logica proposizionale, una proposizione condizionale con premessa falsa è identicamente vera (<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>ex falso quodlibet</b></font></mark>). Ne consegue che l'implicazione è vera per qualunque $x$, dimostrando che $\emptyset \subset A$.
 > 2. Per verificare che $A \subset A$, dobbiamo provare che $(\forall x) \, (x \in A \implies x \in A)$. Assegnando al predicato $x \in A$ il valore proposizionale $P$, l'espressione assume la forma $P \implies P$, che è una tautologia sempre vera per ogni $x$. Dunque ogni insieme è sottoinsieme di se stesso (proprietà riflessiva dell'inclusione).
 
 > [!tip]- Flashcard: Inclusione Universale dell'Insieme Vuoto
@@ -158,7 +158,7 @@ Tags: education/university education/math tech/logic
 END
 %%
 
-> [!danger] Teorema: Principio della Doppia Inclusione
+> [!danger] Teorema: <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Principio della Doppia Inclusione</b></font></mark>
 > Dati due insiemi $A$ e $B$:
 > $$A = B \iff (A \subset B \land B \subset A)$$
 > 
@@ -187,11 +187,11 @@ END
 Per costruire nuovi insiemi a partire da enti già noti, si postula l'<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>assioma della coppia non ordinata</b></font></mark> \[[[Lezione 2 FdM.pdf#page=3|Dispensa p. 3]]].
 
 > [!danger] Assioma 3: Assioma della Coppia Non Ordinata
-> Siano $x$ e $y$ insiemi. Esiste un (unico) insieme, indicato con $\{x, y\}$ e chiamato **coppia non ordinata** formata da $x$ e $y$, che possiede $x$ e $y$ come suoi unici elementi:
+> Siano $x$ e $y$ insiemi. Esiste un (unico) insieme, indicato con $\{x, y\}$ e chiamato <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>coppia non ordinata</b></font></mark> formata da $x$ e $y$, che possiede $x$ e $y$ come suoi unici elementi:
 > $$(\forall z) \, (z \in \{x, y\} \iff z = x \lor z = y)$$
 > Si pone inoltre:
 > $$\{x\} := \{x, x\}$$
-> detto **singoletto** (o insieme ridotto ad un solo elemento). Evidentemente vale:
+> detto <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>singoletto</b></font></mark> (o insieme ridotto ad un solo elemento). Evidentemente vale:
 > $$(\forall z) \, (z \in \{x\} \iff z = x)$$
 
 > [!tip]- Flashcard: Assioma della Coppia Non Ordinata e Singoletto
