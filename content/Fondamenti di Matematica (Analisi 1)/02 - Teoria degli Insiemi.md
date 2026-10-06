@@ -252,7 +252,7 @@ Il vincolo dell'Assioma 4 di specificare la proprietà su un **insieme $A$ già 
   $$R := \{x \mid x \notin x\}$$
 - Valutando l'appartenenza di $R$ a se stesso, si otterrebbe l'antinomia insolubile:
   $$R \in R \iff R \notin R$$
-- Con l'Assioma 4, invece, è possibile definire soltanto $R_A := \{x \in A \mid x \notin x\}$. Valutando $R_A$, si conclude semplicemente che $R_A \notin A$, dimostrando che **non può esistere l'<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>insieme universale</b></font></mark> di tutti gli insiemi**.
+- Con l'Assioma 4, invece, è possibile definire soltanto $R_A := \{x \in A \mid x \notin x\}$. Valutando $R_A$, si conclude semplicemente che $R_A \notin A$, dimostrando che **non può esistere l'**<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>insieme universale</b></font></mark> **di tutti gli insiemi**.
 
 > [!tip]- Flashcard: Assioma di Specificazione e Paradosso di Russell
 > %%

@@ -73,7 +73,7 @@ END
 
 ### Distinzione tra Funzione e Formula Analitica
 
-Il docente sottolinea un errore concettuale frequentissimo: **confondere una funzione con la <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>formula analitica</b></font></mark> che la descrive**. Una formula non è una funzione se non ne vengono esplicitati il dominio e il codominio. Inoltre, il fatto che due funzioni assumano lo stesso valore in uno o più punti non è assolutamente sufficiente a garantirne l'uguaglianza.
+Il docente sottolinea un errore concettuale frequentissimo: **confondere una funzione con la** <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>formula analitica</b></font></mark> **che la descrive**. Una formula non è una funzione se non ne vengono esplicitati il dominio e il codominio. Inoltre, il fatto che due funzioni assumano lo stesso valore in uno o più punti non è assolutamente sufficiente a garantirne l'uguaglianza.
 
 - **Controesempio del Docente:**
   Consideriamo le funzioni $f, g: \mathbb{R} \to \mathbb{R}$ definite rispettivamente da:
@@ -154,7 +154,7 @@ In termini di problemi inversi, la suriettività è una pura <mark style="backgr
 
 #### Il Ruolo Chiave della Scelta del Codominio
 
-Come evidenziato dal docente a lezione, l'essere suriettiva non è una proprietà intrinseca della sola legge di assegnazione, ma **dipende criticamente dalla <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>scelta del codominio</b></font></mark> $B$** \[[[Lezione 4 FdM.pdf#page=2|Dispensa p. 2]]]:
+Come evidenziato dal docente a lezione, l'essere suriettiva non è una proprietà intrinseca della sola legge di assegnazione, ma **dipende criticamente dalla** <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>scelta del codominio</b></font></mark> **$B$** \[[[Lezione 4 FdM.pdf#page=2|Dispensa p. 2]]]:
 - Consideriamo la funzione esponenziale $x \mapsto e^x$:
   - Se considerata come $f: \mathbb{R} \to (0, +\infty)$, essa è **suriettiva**, poiché ogni numero reale strettamente positivo $y > 0$ si può esprimere come $e^x$, con $x = \ln y$.
   - Se invece la stessa espressione analitica viene considerata come $f: \mathbb{R} \to \mathbb{R}$, la funzione **non è suriettiva**: tutti i numeri negativi e lo zero ($y \le 0$) restano privi di controimmagine ("orfani di frecce").
