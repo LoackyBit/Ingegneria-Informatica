@@ -248,11 +248,11 @@ Questo assioma permette di definire sottoinsiemi specificando una proprietà car
 ### Prevenzione del Paradosso di Russell
 
 Il vincolo dell'Assioma 4 di specificare la proprietà su un **insieme $A$ già dato** è il meccanismo che preserva la teoria dalle contraddizioni:
-- Se si ammettesse l'assioma di comprensione ingenua (poter formare l'insieme di tutti gli $x$ che soddisfano $P(x)$ senza vincolo a un universo $A$, ossia $\{x \mid P(x)\}$), ponendo $P(x) \equiv x \notin x$ si potrebbe formare l'insieme di Russell:
+- Se si ammettesse l'assioma di comprensione ingenua (poter formare l'insieme di tutti gli $x$ che soddisfano $P(x)$ senza vincolo a un universo $A$, ossia $\{x \mid P(x)\}$), ponendo $P(x) \equiv x \notin x$ si potrebbe formare l'insieme che genera il <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Paradosso di Russell</b></font></mark>:
   $$R := \{x \mid x \notin x\}$$
 - Valutando l'appartenenza di $R$ a se stesso, si otterrebbe l'antinomia insolubile:
   $$R \in R \iff R \notin R$$
-- Con l'Assioma 4, invece, è possibile definire soltanto $R_A := \{x \in A \mid x \notin x\}$. Valutando $R_A$, si conclude semplicemente che $R_A \notin A$, dimostrando che **non può esistere l'insieme universale di tutti gli insiemi**.
+- Con l'Assioma 4, invece, è possibile definire soltanto $R_A := \{x \in A \mid x \notin x\}$. Valutando $R_A$, si conclude semplicemente che $R_A \notin A$, dimostrando che **non può esistere l'<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>insieme universale</b></font></mark> di tutti gli insiemi**.
 
 > [!tip]- Flashcard: Assioma di Specificazione e Paradosso di Russell
 > %%
@@ -275,13 +275,13 @@ Appoggiandoci all'Assioma 4 di specificazione possiamo definire rigorosamente le
 > Siano $A$ e $B$ due insiemi.
 > 1. Si pone:
 >    $$A \cap B := \{x \in A \mid x \in B\}$$
->    e si chiama **intersezione di $A$ e $B$**. Evidentemente vale:
+>    e si chiama <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>intersezione di $A$ e $B$</b></font></mark>. Evidentemente vale:
 >    $$(\forall x) \, (x \in A \cap B \iff x \in A \land x \in B)$$
 > 2. Si pone:
 >    $$A \setminus B := \{x \in A \mid x \notin B\}$$
->    e si chiama **differenza tra $A$ e $B$** (o $A - B$). Evidentemente vale:
+>    e si chiama <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>differenza tra $A$ e $B$</b></font></mark> (o $A - B$). Evidentemente vale:
 >    $$(\forall x) \, (x \in A \setminus B \iff x \in A \land x \notin B)$$
-> 3. Se $B \subset A$, l'insieme $A \setminus B$ si denota anche con $\complement_A(B)$ e si chiama **complementare di $B$ rispetto ad $A$**:
+> 3. Se $B \subset A$, l'insieme $A \setminus B$ si denota anche con $\complement_A(B)$ e si chiama <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>complementare di $B$ rispetto ad $A$</b></font></mark>:
 >    $$\complement_A(B) := A \setminus B = \{x \in A \mid x \notin B\} \quad (\text{per } B \subset A)$$
 
 ![[Schema - Teoria degli Insiemi - Operazioni Insiemistiche.png]]
@@ -309,7 +309,7 @@ L'intersezione può essere generalizzata non soltanto a due insiemi, ma a una co
 > $$X := \{x \in B \mid (\forall A \in \mathcal{F}) \, (x \in A)\}$$
 > Evidentemente vale:
 > $$(\forall x) \, (x \in X \iff (\forall A \in \mathcal{F}) \, (x \in A))$$
-> L'insieme $X$ non dipende dalla scelta iniziale dell'insieme $B \in \mathcal{F}$ e si chiama **intersezione degli insiemi di $\mathcal{F}$**, denotato con:
+> L'insieme $X$ non dipende dalla scelta iniziale dell'insieme $B \in \mathcal{F}$ e si chiama <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>intersezione di una famiglia di insiemi</b></font></mark>, denotato con:
 > $$\bigcap \mathcal{F} \quad \text{oppure} \quad \bigcap_{A \in \mathcal{F}} A$$
 
 Intuitivamente, se la famiglia $\mathcal{F}$ contiene gli insiemi $A, B, C, D, \dots$, l'intersezione corrisponde alla parte comune a tutti:
@@ -334,7 +334,7 @@ END
 
 ## 8. Assioma dell'Unione e Unione di Insiemi
 
-A differenza dell'intersezione, per unire due o più insiemi generici **non è possibile fare ricorso all'Assioma 4 di specificazione**, poiché non disponiamo a priori di un insieme universo già costituito che contenga entrambi gli insiemi. L'esistenza dell'unione deve essere quindi introdotta tramite un apposito postulato \[[[Lezione 2 FdM.pdf#page=4|Dispensa p. 4]]].
+A differenza dell'intersezione, per unire due o più insiemi generici **non è possibile fare ricorso all'Assioma 4 di specificazione**, poiché non disponiamo a priori di un insieme universo già costituito che contenga entrambi gli insiemi. L'esistenza dell'unione deve essere quindi introdotta tramite l'<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>assioma dell'unione</b></font></mark> \[[[Lezione 2 FdM.pdf#page=4|Dispensa p. 4]]].
 
 > [!tip]- Flashcard: Perché l'Unione Richiede un Assioma Autonomo
 %%
@@ -349,19 +349,19 @@ END
 %%
 
 > [!danger] Assioma 5: Assioma dell'Unione
-> Sia $\mathcal{F}$ un insieme (pensato come una famiglia di insiemi). Esiste un insieme, che denotiamo con $\bigcup \mathcal{F}$ o con $\bigcup_{A \in \mathcal{F}} A$ e chiamiamo **unione degli insiemi di $\mathcal{F}$**, che ha per elementi tutti e soli gli elementi appartenenti ad almeno un insieme di $\mathcal{F}$:
+> Sia $\mathcal{F}$ un insieme (pensato come una famiglia di insiemi). Esiste un insieme, che denotiamo con $\bigcup \mathcal{F}$ o con $\bigcup_{A \in \mathcal{F}} A$ e chiamiamo <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>unione degli insiemi di $\mathcal{F}$</b></font></mark>, che ha per elementi tutti e soli gli elementi appartenenti ad almeno un insieme di $\mathcal{F}$:
 > $$(\forall x) \, \left(x \in \bigcup \mathcal{F} \iff (\exists A \in \mathcal{F}) \, (x \in A)\right)$$
 
 > [!example] Esempio 1.7: Metafora dei Sacchi di Grano
 > Supponiamo che $\mathcal{F}$ sia un insieme di sacchi di grano. Ciascun sacco contiene chicchi di grano (elementi). Se immaginiamo di svuotare tutti i singoli sacchi in un sacco più grande, otterremo esattamente l'unione $\bigcup \mathcal{F}$.
 
 > [!danger] Definizione 1.8: Unione di Due Insiemi
-> Siano $A$ e $B$ due insiemi. Si definisce l'insieme **unione di $A$ e $B$** come l'unione della famiglia costituita dalla coppia non ordinata $\{A, B\}$ (costruita mediante l'Assioma 3):
+> Siano $A$ e $B$ due insiemi. Si definisce l'insieme <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>unione di due insiemi</b></font></mark> ($A \cup B$) come l'unione della famiglia costituita dalla coppia non ordinata $\{A, B\}$ (costruita mediante l'Assioma 3):
 > $$A \cup B := \bigcup \{A, B\}$$
 > Evidentemente vale la caratterizzazione formale:
 > $$(\forall x) \, (x \in A \cup B \iff (\exists X \in \{A, B\}) \, (x \in X) \iff x \in A \lor x \in B)$$
 
-L'operazione di unione riflette esattamente la **disgiunzione logica inclusiva** ($\lor$).
+L'operazione di unione riflette esattamente la <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>disgiunzione logica inclusiva</b></font></mark> ($\lor$).
 
 ![[Schema - Teoria degli Insiemi - Unione di Insiemi e Famiglie.png]]
 *(Rappresentazione dell'unione: a sinistra l'unione binaria $A \cup B$; a destra l'unione della famiglia $\mathcal{F}$ che raccoglie tutti gli elementi degli insiemi costitutivi — rif. \[[[Lezione 2 FdM.pdf#page=5|Dispensa p. 5]]])*
@@ -516,7 +516,7 @@ END
 L'<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>assioma dell'insieme potenza</b></font></mark> permette di collezionare la totalità dei possibili sottoinsiemi di un insieme dato in un nuovo ente matematico \[[[Lezione 2 FdM.pdf#page=6|Dispensa p. 6]]].
 
 > [!danger] Assioma 6: Assioma dell'Insieme Potenza
-> Sia $A$ un insieme. Esiste un insieme che ha per elementi tutti e soli i sottoinsiemi di $A$. Questo insieme si denota con $\mathcal{P}(A)$ (oppure con $2^A$) e si chiama **insieme potenza** di $A$ (o **insieme delle parti** di $A$):
+> Sia $A$ un insieme. Esiste un insieme che ha per elementi tutti e soli i sottoinsiemi di $A$. Questo insieme si denota con $\mathcal{P}(A)$ (oppure con $2^A$) e si chiama **insieme potenza** di $A$ (o <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>insieme delle parti</b></font></mark> di $A$):
 > $$(\forall B) \, (B \in \mathcal{P}(A) \iff B \subset A)$$
 
 > [!example] Esempio 1.12: Proprietà ed Esempi dell'Insieme Potenza
@@ -554,7 +554,7 @@ L'<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>ass
 
 ## 12. Complementi: Costruzione dei Numeri Naturali di Von Neumann
 
-La costruzione assiomatica consente di edificare l'intero edificio dei numeri a partire dal puro insieme vuoto, secondo il procedimento formulato da John von Neumann \[[[Lezione 2 FdM.pdf#page=6|Dispensa p. 6]]]. A tale scopo è necessario escludere insiemi patologici che appartengono a se stessi mediante l'<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>assioma di fondazione</b></font></mark>.
+La costruzione assiomatica consente di edificare l'intero edificio dei numeri a partire dal puro insieme vuoto, secondo il procedimento formulato da <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>John von Neumann</b></font></mark> \[[[Lezione 2 FdM.pdf#page=6|Dispensa p. 6]]]. A tale scopo è necessario escludere insiemi patologici che appartengono a se stessi mediante l'<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>assioma di fondazione</b></font></mark>.
 
 > [!danger] Assioma 7: Assioma di Fondazione (o di Regolarità)
 > Per ogni insieme non vuoto $A$, esiste un suo elemento $x \in A$ tale che $x$ e $A$ sono disgiunti:
@@ -584,14 +584,14 @@ END
 %%
 
 > [!danger] Definizione 2.1: Successivo di un Insieme
-> Sia $x$ un insieme. Si chiama **successivo di $x$** l'insieme:
+> Sia $x$ un insieme. Si chiama <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>successivo di un insieme</b></font></mark> ($x^+$) l'insieme:
 > $$x^+ := x \cup \{x\}$$
 > Il successivo di $x$ contiene dunque tutti gli elementi di $x$ più l'insieme $x$ stesso.
 > In virtù dell'Assioma 7, vale $x \subset x^+$ e $x \ne x^+$, cosicché $x$ è un sottoinsieme proprio di $x^+$ ed ha esattamente un elemento in più di $x$ (l'elemento $x$ stesso).
 
 ### La Costruzione dei Numeri Naturali di Von Neumann
 
-Definendo lo zero come l'insieme vuoto e applicando iterativamente l'operatore di successivo, si generano tutti i numeri naturali:
+Nella celebre <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>costruzione dei numeri naturali</b></font></mark>, definendo lo zero come l'insieme vuoto e applicando iterativamente l'operatore di successivo, si generano tutti i numeri naturali:
 
 $$
 \begin{aligned}
