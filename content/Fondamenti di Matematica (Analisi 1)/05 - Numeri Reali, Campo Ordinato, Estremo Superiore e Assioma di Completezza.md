@@ -472,10 +472,10 @@ La definizione di estremo superiore richiede che l'insieme dei maggioranti $U(A)
 > L'insieme $S$ è non vuoto e limitato superiormente in $\mathbb{Q}$ (ad esempio da $2 \in \mathbb{Q}$). Tuttavia, non esiste alcun numero razionale il cui quadrato sia $2$ ($\sqrt{2} \notin \mathbb{Q}$).
 > Ne consegue che l'insieme dei maggioranti razionali $U(S) \cap \mathbb{Q}$ non ammette minimo in $\mathbb{Q}$: il campo razionale presenta delle "fratture" o "buchi".
 
-Per impedire la presenza di buchi e garantire la continuità della retta numerica, si introduce l'assioma fondativo dell'Analisi Matematica \[[[Lezione 5 FdM.pdf#page=7|Dispensa p. 7]]].
+Per impedire la presenza di buchi e garantire la continuità della retta numerica, si introduce l'assioma fondativo dell'Analisi Matematica dovuto al matematico tedesco <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Richard Dedekind</b></font></mark> \[[[Lezione 5 FdM.pdf#page=7|Dispensa p. 7]]].
 
 > [!danger] Assioma 4.12: Assioma di Completezza (o di Continuità di Dedekind)
-> Ogni sottoinsieme non vuoto e limitato superiormente di $\mathbb{R}$ ammette estremo superiore in $\mathbb{R}$:
+> Ogni sottoinsieme non vuoto e limitato superiormente di $\mathbb{R}$ ammette estremo superiore in $\mathbb{R}$ secondo l'<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>assioma di completezza di Dedekind</b></font></mark>:
 > $$(\forall A \subset \mathbb{R}, A \neq \emptyset) \; [U(A) \neq \emptyset \implies \exists\, \sup A \in \mathbb{R}]$$
 
 ### Teorema di Esistenza dell'Estremo Inferiore
@@ -483,7 +483,7 @@ Per impedire la presenza di buchi e garantire la continuità della retta numeric
 L'assioma di completezza postula l'esistenza del $\sup$ per insiemi superiormente limitati. Da esso si deduce rigorosamente l'esistenza dell'$\inf$ per insiemi inferiormente limitati \[[[Lezione 5 FdM.pdf#page=7|Dispensa p. 7]]].
 
 > [!summary] Proposizione 4.13: Esistenza dell'Estremo Inferiore
-> Ogni sottoinsieme non vuoto e limitato inferiormente di $\mathbb{R}$ ammette estremo inferiore in $\mathbb{R}$.
+> Ogni sottoinsieme non vuoto e limitato inferiormente di $\mathbb{R}$ ammette <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>estremo inferiore</b></font></mark> in $\mathbb{R}$.
 
 #### Dimostrazione Formale del Docente
 Sia $B \subset \mathbb{R}, B \neq \emptyset$, un insieme limitato inferiormente. Vogliamo dimostrare che l'insieme dei suoi minoranti $L(B)$ ammette massimo, ossia che esiste $\inf B = \max L(B)$.
@@ -538,7 +538,7 @@ Operativamente, non si calcola l'estremo superiore determinando l'intero insieme
 
 ### Formulazione Analitica $\varepsilon$-Forma
 
-In Analisi Matematica, ponendo $t = s - \varepsilon$ (con $\varepsilon > 0$), la condizione di caratterizzazione assume la celebre forma adoperata nelle dimostrazioni sui limiti e sulle successioni:
+In Analisi Matematica, ponendo $t = s - \varepsilon$ (con $\varepsilon > 0$), la condizione di caratterizzazione assume la celebre <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>caratterizzazione con $\varepsilon$</b></font></mark> adoperata nelle dimostrazioni sui limiti e sulle successioni:
 
 > [!danger] Caratterizzazione Operativa con $\varepsilon > 0$
 > - **Estremo Superiore:**
@@ -546,12 +546,8 @@ In Analisi Matematica, ponendo $t = s - \varepsilon$ (con $\varepsilon > 0$), la
 > - **Estremo Inferiore:**
 >   $$i = \inf B \iff \begin{cases} 1) \; (\forall b \in B) \; i \le b & \text{($i$ è un minorante)} \\ 2) \; (\forall \varepsilon > 0)(\exists\, b \in B) \; b < i + \varepsilon & \text{(se si sale di $\varepsilon$, si "pesca" un punto di $B$)} \end{cases}$$
 
-```
-                s - ε       a       s (sup A)
-──────────────────|─────────*───────|────────────────►
-                 [---------]
-                  ampiezza ε
-```
+> [!note] Intuizione Geometrica dell'Intervallo $[s - \varepsilon, s]$
+> Sulla retta reale, comunque si fissi un intorno sinistro di ampiezza $\varepsilon > 0$ dell'estremo superiore $s$, cadrà sempre all'interno dell'intervallo $(s - \varepsilon, s]$ almeno un elemento $a \in A$. Non vi è alcuno "spazio vuoto" tra gli elementi dell'insieme e il loro estremo superiore.
 
 > [!tip]- Flashcard: Teorema di Caratterizzazione dell'Estremo Superiore
 %%
@@ -581,7 +577,7 @@ END
 
 ## 9. Teorema dell'Elemento Separatore (Separazione di Dedekind)
 
-Il coronamento geometrico della completezza reale è rappresentato dalla proprietà delle classi contigue e dell'elemento separatore \[[[Lezione 5 FdM.pdf#page=8|Dispensa p. 8]]].
+Il coronamento geometrico della completezza reale è rappresentato dalla proprietà delle classi contigue e dal <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>teorema dell'elemento separatore</b></font></mark> \[[[Lezione 5 FdM.pdf#page=8|Dispensa p. 8]]].
 
 > [!danger] Teorema 4.16: Teorema dell'Elemento Separatore
 > Siano $A, B \subset \mathbb{R}$ due insiemi non vuoti tali che ogni elemento di $A$ precede ogni elemento di $B$:
@@ -595,7 +591,7 @@ Il coronamento geometrico della completezza reale è rappresentato dalla proprie
 ### Significato Fondativo e Continuità della Retta
 
 In geometria sintetica, la retta euclidea è priva di interruzioni. Il Teorema dell'Elemento Separatore garantisce che tra due classi di punti ordinati $A$ e $B$ esiste **sempre almeno un punto reale di separazione**. 
-Se le due classi sono "contigue" (ossia la distanza tra esse può essere resa arbitrariamente piccola: $\inf B - \sup A = 0$), l'elemento separatore $\lambda$ è **unico**, realizzando il punto di cesura perfetta postulato da Richard Dedekind.
+Se le due classi sono "contigue" (ossia la distanza tra esse può essere resa arbitrariamente piccola: $\inf B - \sup A = 0$), l'elemento separatore $\lambda$ è **unico**, realizzando il punto di cesura perfetta postulato da <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Richard Dedekind</b></font></mark>.
 
 È precisamente questa proprietà che differenzia $\mathbb{R}$ da $\mathbb{Q}$: se consideriamo in $\mathbb{Q}$ le classi $A = \{q \in \mathbb{Q} \mid q \le 0 \lor q^2 < 2\}$ e $B = \{q \in \mathbb{Q} \mid q > 0 \land q^2 > 2\}$, esse soddisfano $a \le b$, ma in $\mathbb{Q}$ **non esiste alcun elemento separatore**, poiché $\sqrt{2}$ non è razionale! In $\mathbb{R}$, invece, $\lambda = \sqrt{2} \in \mathbb{R}$ separa perfettamente i due insiemi.
 
