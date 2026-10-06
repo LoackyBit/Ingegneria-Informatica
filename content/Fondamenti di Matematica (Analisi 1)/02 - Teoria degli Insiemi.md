@@ -32,9 +32,9 @@ La trattazione segue la formulazione della teoria assiomatica **ZF (Zermelo-Frae
 
 ## Cenni Storici ed Epistemologici
 
-La teoria degli insiemi fu concepita e sviluppata originariamente da Georg Cantor e Richard Dedekind intorno al 1870, per poi essere formalizzata nel linguaggio della logica da Gottlob Frege nei primi anni del Novecento. In seguito alla scoperta di celebri paradossi — primo fra tutti il **Paradosso di Russell** (1901) e l'antinomia di Burali-Forti — la teoria ingenua degli insiemi (*naive set theory*) dovette essere profondamente rifondata.
+La teoria degli insiemi fu concepita e sviluppata originariamente da <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Georg Cantor</b></font></mark> e <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Richard Dedekind</b></font></mark> intorno al 1870, per poi essere formalizzata nel linguaggio della logica da <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Gottlob Frege</b></font></mark> nei primi anni del Novecento. In seguito alla scoperta di celebri paradossi — primo fra tutti il <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Paradosso di Russell</b></font></mark> (1901) e l'antinomia di Burali-Forti — la <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>teoria ingenua degli insiemi</b></font></mark> (*naive set theory*) dovette essere profondamente rifondata.
 
-Il processo di assiomatizzazione rigorosa fu avviato da Ernst Zermelo nel 1908 e successivamente perfezionato da Abraham Fraenkel e Thoralf Skolem nel 1922. Il sistema risultante, noto come **teoria di Zermelo-Fraenkel (ZF)**, o **ZFC** con l'inclusione dell'Assioma della Scelta (*Choice*), costituisce il fondamento standard su cui poggia l'intera matematica contemporanea e l'analisi infinitesimale.
+Il processo di assiomatizzazione rigorosa fu avviato da <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Ernst Zermelo</b></font></mark> nel 1908 e successivamente perfezionato da <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Abraham Fraenkel</b></font></mark> e Thoralf Skolem nel 1922. Il sistema risultante, noto come <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>teoria di Zermelo-Fraenkel (ZF)</b></font></mark>, o **ZFC** con l'inclusione dell'Assioma della Scelta (*Choice*), costituisce il fondamento standard su cui poggia l'intera matematica contemporanea e l'analisi infinitesimale.
 
 ---
 
@@ -47,7 +47,7 @@ Intuitivamente, gli insiemi rappresentano collezioni di oggetti. Nella teoria pu
 Per articolare la teoria si adotta la [[01 - Logica Proposizionale, Predicati e Metodi di Dimostrazione#Logica dei Predicati e Quantificatori|logica dei predicati]]. Le lettere minuscole e maiuscole ($a, b, x, y, A, B, X, Y, \mathcal{F}, \mathcal{G}$) rappresentano variabili del linguaggio che denotano insiemi.
 
 Tra gli insiemi sono stabilite due <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>relazioni primitive</b></font></mark>:
-1. **Relazione di appartenenza ($\in$):** $x \in A$ asserisce che $x$ è un elemento di $A$ (o che $x$ appartiene ad $A$). È considerata un predicato atomico.
+1. **Relazione di appartenenza ($\in$):** $x \in A$ asserisce che $x$ è un elemento di $A$ (o che $x$ appartiene ad $A$). È considerata un <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>predicato atomico</b></font></mark>.
 2. **Relazione di uguaglianza ($=$):** $x = y$ asserisce che due simboli identificano il medesimo oggetto matematico. È anch'essa assunta come predicato atomico.
 
 A partire dai predicati atomici si costruiscono tutti i predicati complessi mediante i connettivi logici e i quantificatori:
@@ -55,7 +55,7 @@ $$\land, \quad \lor, \quad \neg, \quad \implies, \quad \impliedby, \quad \iff, \
 
 ### Proprietà Fondamentali dell'Uguaglianza
 
-La relazione primitiva di uguaglianza gode delle tre proprietà caratteristiche di una relazione di equivalenza:
+La relazione primitiva di uguaglianza gode delle tre proprietà caratteristiche di una <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>relazione di equivalenza</b></font></mark>:
 - **Riflessività:** $(\forall x) \, (x = x)$
 - **Simmetria:** $(\forall x, y) \, (x = y \implies y = x)$
 - **Transitività:** $(\forall x, y, z) \, (x = y \land y = z \implies x = z)$
