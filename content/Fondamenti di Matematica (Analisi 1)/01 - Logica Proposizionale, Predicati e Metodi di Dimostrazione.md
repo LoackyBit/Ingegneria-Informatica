@@ -155,7 +155,7 @@ Per chiarire la semantica dei connettivi binari, il docente propone l'analogia g
 | F | F | F | **F** |
 
 - **Congiunzione ($P \land Q$):** la <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>congiunzione</b></font></mark> è vera **esclusivamente** quando entrambe le proposizioni $P$ e $Q$ sono vere.
-- **Disgiunzione ($P \lor Q$):** è falsa **esclusivamente** quando entrambe le proposizioni $P$ e $Q$ sono false; in matematica si adotta **rigorosamente solo la <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>disgiunzione inclusiva</b></font></mark>** ($P \lor Q$ è vera anche quando sia $P$ sia $Q$ sono entrambe vere). Questo principio si ricollega direttamente alla definizione di unione tra insiemi in [[02 - Teoria degli Insiemi]] e [[01 - Teoria degli Insiemi, Spazio Campionario e Prime Nozioni di Probabilità]].
+- **Disgiunzione ($P \lor Q$):** è falsa **esclusivamente** quando entrambe le proposizioni $P$ e $Q$ sono false; in matematica si adotta rigorosamente solo la <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>disgiunzione inclusiva</b></font></mark> ($P \lor Q$ è vera anche quando sia $P$ sia $Q$ sono entrambe vere). Questo principio si ricollega direttamente alla definizione di unione tra insiemi in [[02 - Teoria degli Insiemi]] e [[01 - Teoria degli Insiemi, Spazio Campionario e Prime Nozioni di Probabilità]].
 
 > [!tip]- Flashcard: Congiunzione e Disgiunzione Inclusiva
 %%
