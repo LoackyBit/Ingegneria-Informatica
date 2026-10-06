@@ -159,7 +159,7 @@ Come evidenziato dal docente a lezione, l'essere suriettiva non è una propriet�
   - Se considerata come $f: \mathbb{R} \to (0, +\infty)$, essa è **suriettiva**, poiché ogni numero reale strettamente positivo $y > 0$ si può esprimere come $e^x$, con $x = \ln y$.
   - Se invece la stessa espressione analitica viene considerata come $f: \mathbb{R} \to \mathbb{R}$, la funzione **non è suriettiva**: tutti i numeri negativi e lo zero ($y \le 0$) restano privi di controimmagine ("orfani di frecce").
 
-- **Esempio Discreto e <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Principio dei Cassetti</b></font></mark>:**
+- **Esempio Discreto e** <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Principio dei Cassetti</b></font></mark>:
   Se $A$ è un insieme finito di 2 elementi e $B$ un insieme di 3 elementi, non può esistere alcuna funzione suriettiva $f: A \to B$. Poiché da ciascuno dei 2 elementi di $A$ può partire una e una sola freccia (per definizione di funzione), al massimo 2 elementi di $B$ possono essere raggiunti, lasciando almeno un elemento di $B$ scoperto.
 
 > [!tip]- Flashcard: Definizione di Funzione Suriettiva
@@ -330,9 +330,9 @@ Infatti $(f \circ i_A)(x) = f(i_A(x)) = f(x)$ e $(i_B \circ f)(x) = i_B(f(x)) = 
 > [!quote]- Divagazione del Docente: La Notazione della Funzione Identità e Kenan Yıldız
 > Il docente scherza sulla grafia della lettera $i$ utilizzata per la funzione identità ($i_A$ oppure $I_A$, con o senza puntino), collegandosi con ironia alle dispute sulla corretta pronuncia e trascrizione dei caratteri dell'alfabeto turco, come nel cognome del calciatore juventino Kenan Yıldız (in cui la "ı" senza puntino corrisponde a un fonema ben distinto dalla "i" con il puntino).
 
-#### 3. <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Non Commutatività Generale</b></font></mark>
+#### 3. Non Commutatività Generale
 
-In generale, **la composizione di funzioni <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>NON è commutativa</b></font></mark>**:
+In generale, la composizione di funzioni <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>NON è commutativa</b></font></mark>:
 $$g \circ f \neq f \circ g$$
 Anche nei casi in cui entrambe le composizioni siano calcolabili (ossia quando $A = B = C$):
 1. **Controesempio analitico:** Siano $f(x) = x^2$ e $g(x) = e^x$ su $\mathbb{R} \to \mathbb{R}$:
@@ -489,7 +489,7 @@ Tags: education/university education/math tech/logic
 END
 %%
 
-#### Dimostrazione dell'<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Unicità dell'Inversa</b></font></mark>
+#### Dimostrazione dell'Unicità dell'Inversa
 
 Supponiamo che esistano due funzioni $g, h: B \to A$ soddisfacenti entrambe le condizioni del teorema:
 $$(g \circ f = i_A \;\land\; f \circ g = i_B) \qquad \text{e} \qquad (h \circ f = i_A \;\land\; f \circ h = i_B)$$
@@ -503,7 +503,7 @@ Sostituendo ora la proprietà $h \circ f = i_A$ (garantita dalle proprietà di $
 $$h = i_A \circ g$$
 Infine, poiché $i_A$ è l'elemento neutro a sinistra:
 $$h = g$$
-L'inversa, se esiste, è rigorosamente **unica**. $\blacksquare$
+L'inversa, se esiste, è rigorosamente <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>unica</b></font></mark>. $\blacksquare$
 
 > [!tip]- Flashcard: Unicità della Funzione Inversa
 %%
@@ -521,12 +521,12 @@ END
 
 ### Proprietà Geometriche e Strutturali dell'Inversa
 
-1. **<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Simmetria del Grafico</b></font></mark> Rispetto alla Bisettrice:**
+1. <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Simmetria del Grafico</b></font></mark> rispetto alla bisettrice:
    Ricordando che il grafico di $f$ è $G_f = \{(x, y) \in A \times B \mid y = f(x)\}$, la relazione fondamentale dell'inversa $y = f(x) \iff x = f^{-1}(y)$ stabilisce che:
    $$(x, y) \in G_f \iff (y, x) \in G_{f^{-1}}$$
    Il grafico della funzione inversa $f^{-1}$ è esattamente il <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>simmetrico del grafico</b></font></mark> di $f$ rispetto alla bisettrice del primo e terzo quadrante ($y = x$) \[[[Lezione 4 FdM.pdf#page=5|Dispensa p. 5]]].
 
-2. **<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Inversa della Composizione</b></font></mark>:**
+2. <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Inversa della Composizione</b></font></mark>:
    Se due funzioni sono biettive, la loro composizione è biettiva e l'inversa <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>inverte l'ordine dei fattori</b></font></mark> \[[[Lezione 4 FdM.pdf#page=6|Dispensa p. 6]]]:
 
 > [!summary] Teorema 1.15: <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Inversa della Composizione</b></font></mark>
@@ -560,22 +560,22 @@ END
 
 ---
 
-## 5. Applicazioni Ingegneristiche e <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Problemi Inversi</b></font></mark>
+## 5. Applicazioni Ingegneristiche e Problemi Inversi
 
-Il docente dedica una riflessione fondamentale al divario tra la purezza dell'astrazione matematica e la realtà del calcolo ingegneristico: **il fatto che una funzione inversa esista teoricamente non implica affatto che sia calcolabile in pratica** ("Questo teorema come ingegneri matematici lo dimostrate, ma nel mondo reale dei sistemi fisici e computazionali la situazione è drasticamente diversa").
+Il docente dedica una riflessione fondamentale ai <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>problemi inversi</b></font></mark> e al divario tra la purezza dell'astrazione matematica e la realtà del calcolo ingegneristico: **il fatto che una funzione inversa esista teoricamente non implica affatto che sia calcolabile in pratica** ("Questo teorema come ingegneri matematici lo dimostrate, ma nel mondo reale dei sistemi fisici e computazionali la situazione è drasticamente diversa").
 
-### 1. <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Crittografia Asimmetrica</b></font></mark> e Algoritmo RSA
+### 1. Crittografia Asimmetrica e Algoritmo RSA
 
-La sicurezza dei sistemi informatici moderni si basa su funzioni matematiche cosiddette *one-way* (<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>funzioni unidirezionali a botola</b></font></mark> o *trapdoor*):
+La sicurezza dei sistemi informatici moderni e della <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>crittografia asimmetrica</b></font></mark> si basa su funzioni matematiche cosiddette *one-way* (<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>funzioni unidirezionali a botola</b></font></mark> o *trapdoor*):
 - Sia $f: \mathbb{P} \times \mathbb{P} \to \mathbb{N}$ la funzione che a una coppia di numeri primi molto grandi $(p, q)$ associa il loro prodotto:
   $$f(p, q) = p \cdot q = n$$
 - Ristretta all'insieme dei semiprimi, la funzione $f$ è teoricamente biettiva (il <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Teorema Fondamentale dell'Aritmetica</b></font></mark> garantisce l'esistenza e l'unicità della scomposizione in fattori primi).
 - Dunque l'inversa $f^{-1}: n \mapsto (p, q)$ **esiste teoricamente ed è unica**.
 - Tuttavia, calcolare il prodotto in senso diretto $f(p, q)$ richiede frazioni di millisecondo mediante algoritmi polinomiali di moltiplicazione, mentre calcolare l'inversa $f^{-1}(n)$ (fattorizzazione di interi di migliaia di bit) richiede tempi esponenziali con gli algoritmi classici noti, risultando <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>computazionalmente intrattabile</b></font></mark>. L'asimmetria di complessità tra $f$ ed $f^{-1}$ fonda la robustezza della cifratura RSA.
 
-### 2. <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Tomografia ad Impedenza Elettrica (EIT)</b></font></mark> e Geofisica
+### 2. Tomografia ad Impedenza Elettrica (EIT) e Geofisica
 
-Nel mondo dell'ingegneria biomedica e della modellistica fisica differenziale:
+Nel mondo dell'ingegneria biomedica (con la <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>tomografia ad impedenza elettrica (EIT)</b></font></mark>) e della modellistica fisica differenziale:
 - **Problema Diretto (<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Equazioni di Maxwell</b></font></mark>):** Data la conducibilità elettrica interna $\sigma$ dei tessuti cerebrali all'interno del cranio $\Omega$, le equazioni della fisica determinano in modo univoco il potenziale elettrico $u$ misurabile sul contorno $\Gamma$ (lo scalpo del paziente).
 - **Problema Inverso (Diagnostica):** Il medico non può sezionare la testa del paziente vivo: posiziona elettrodi sullo scalpo, misura il potenziale $u$ sul bordo $\Gamma$ e desidera invertire la mappa per ricostruire la mappa di conducibilità interna $\sigma(x, y, z)$ e individuare emorragie o tumori.
 - Analoghi problemi inversi governano la Magnetoencefalografia (MEG), la Risonanza Magnetica (RMN) e la geofisica (misura delle anomalie magnetiche ed elastiche da elicotteri o satelliti per localizzare faglie o prevedere sismi).
@@ -599,12 +599,12 @@ END
 
 In chiusura di lezione, il docente richiama l'attenzione su una pericolosa <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>sovrapposizione notazionale</b></font></mark> universale nella letteratura matematica: il simbolo $f^{-1}$ viene impiegato per denotare due concetti profondamente distinti \[[[Lezione 4 FdM.pdf#page=5|Dispensa p. 5]]]:
 
-1. **$f^{-1}$ come <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Funzione Inversa</b></font></mark>:**
+1. **$f^{-1}$ come** <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>funzione inversa</b></font></mark>:
    - È una funzione definita tra gli <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>elementi</b></font></mark> degli insiemi: $f^{-1}: B \to A$.
    - Ad ogni singolo elemento $y \in B$ associa l'unico elemento $x \in A$ tale che $f(x) = y$.
    - **Condizione di esistenza:** Esiste **esclusivamente** se la funzione $f$ è biettiva (o iniettiva se ristretta all'immagine).
 
-2. **$f^{-1}$ come <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Controimmagine</b></font></mark> (o Preimmagine):**
+2. **$f^{-1}$ come** <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>controimmagine</b></font></mark> **(o preimmagine):**
    - È un'operazione definita tra i <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>sottoinsiemi</b></font></mark> degli insiemi (tra gli <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>insiemi delle parti</b></font></mark>): $f^{-1}: \mathcal{P}(B) \to \mathcal{P}(A)$.
    - Ad ogni sottoinsieme $Y \subseteq B$ associa il sottoinsieme delle sue controimmagini:
      $$f^{-1}(Y) = \{x \in A \mid f(x) \in Y\}$$
