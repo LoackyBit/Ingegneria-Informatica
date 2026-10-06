@@ -43,12 +43,12 @@ Per definire punti su un piano o sequenze di istruzioni occorre un oggetto che d
 La costruzione canonica universalmente adottata nella matematica moderna è dovuta al matematico polacco <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Kazimierz Kuratowski</b></font></mark> (1921) \[[[Lezione 3 FdM.pdf#page=1|Dispensa p. 1]]].
 
 > [!danger] Definizione 1.1: Coppia Ordinata (Kuratowski)
-> Siano $x$ e $y$ insiemi. Si definisce **coppia ordinata** avente come prima coordinata $x$ e come seconda coordinata $y$ l'insieme:
+> Siano $x$ e $y$ insiemi. Si definisce <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>coppia ordinata</b></font></mark> avente come prima coordinata $x$ e come seconda coordinata $y$ l'insieme:
 > $$(x, y) := \{\{x\}, \{x, y\}\}$$
 
 La validità e l'esistenza formale di tale oggetto nella teoria ZF poggia esclusivamente su applicazioni ripetute dell'assioma della coppia non ordinata:
-1. Dato $x$, l'assioma della coppia garantisce l'esistenza del singoletto $\{x\} = \{x, x\}$;
-2. Dati $x$ e $y$, l'assioma della coppia garantisce l'esistenza della coppia non ordinata $\{x, y\}$;
+1. Dato $x$, l'assioma della coppia garantisce l'esistenza del <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>singoletto</b></font></mark> $\{x\} = \{x, x\}$;
+2. Dati $x$ e $y$, l'assioma della coppia garantisce l'esistenza della <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>coppia non ordinata</b></font></mark> $\{x, y\}$;
 3. Dati gli insiemi $\{x\}$ e $\{x, y\}$, una terza applicazione dell'assioma della coppia garantisce l'esistenza dell'insieme delle due parti: $\{\{x\}, \{x, y\}\}$.
 
 L'asimmetria strutturale della definizione è evidente: l'elemento $x$ compare in entrambi i sottoinsiemi (sia nel singoletto $\{x\}$ sia nella coppia $\{x, y\}$), mentre $y$ compare esclusivamente nella coppia $\{x, y\}$. La presenza del singoletto $\{x\}$ serve proprio come "ancora" identificativa per isolare in modo univoco la prima coordinata rispetto alla seconda.
@@ -72,7 +72,7 @@ END> %%
 
 ### Proprietà Caratteristica della Coppia Ordinata
 
-Affinché la definizione di Kuratowski sia matematicamente soddisfacente, essa deve garantire la proprietà fondamentale delle coppie ordinate: due coppie sono uguali se e solo se coincidono ordinatamente le rispettive coordinate \[[[Lezione 3 FdM.pdf#page=1|Dispensa p. 1]]].
+Affinché la definizione di Kuratowski sia matematicamente soddisfacente, essa deve garantire la <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>proprietà caratteristica della coppia ordinata</b></font></mark>: due coppie sono uguali se e solo se coincidono ordinatamente le rispettive coordinate \[[[Lezione 3 FdM.pdf#page=1|Dispensa p. 1]]].
 
 > [!summary] Proposizione 1.3: Proprietà Caratteristica della Coppia Ordinata
 > Siano $x, y, a, b$ insiemi. Allora:
@@ -114,10 +114,10 @@ END> %%
 A partire dalla definizione di coppia ordinata, è possibile definire per ricorsione collezioni ordinate con un numero arbitrario di elementi \[[[Lezione 3 FdM.pdf#page=4|Dispensa p. 4]]].
 
 > [!danger] Definizione: Terna Ordinata
-> Siano $x, y, z$ insiemi. Si definisce **terna ordinata** formata da $x, y, z$ la coppia ordinata avente come prima coordinata la coppia $(x, y)$ e come seconda coordinata $z$:
+> Siano $x, y, z$ insiemi. Si definisce <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>terna ordinata</b></font></mark> formata da $x, y, z$ la coppia ordinata avente come prima coordinata la coppia $(x, y)$ e come seconda coordinata $z$:
 > $$(x, y, z) := ((x, y), z)$$
 
-In modo analogo, per qualsiasi $n \ge 3$, la $n$-upla ordinata $(x_1, x_2, \dots, x_n)$ è definita ricorsivamente come la coppia ordinata:
+In modo analogo, per qualsiasi $n \ge 3$, la <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>$n$-upla ordinata</b></font></mark> $(x_1, x_2, \dots, x_n)$ è definita ricorsivamente come la coppia ordinata:
 $$(x_1, x_2, \dots, x_n) := ((x_1, x_2, \dots, x_{n-1}), x_n)$$
 
 > [!tip]- Flashcard: Definizione di Terna Ordinata
@@ -157,7 +157,7 @@ Per individuare l'universo appropriato, analizziamo la struttura insiemistica de
 Questo dimostra in modo ineccepibile che tutte le coppie ordinate con prima coordinata in $A$ e seconda coordinata in $B$ appartengono all'universo preesistente $\mathcal{P}(\mathcal{P}(A \cup B))$.
 
 > [!danger] Definizione 1.4: Prodotto Cartesiano
-> Siano $A$ e $B$ insiemi. Si definisce **prodotto cartesiano** di $A$ e $B$, e si denota con $A \times B$, l'insieme:
+> Siano $A$ e $B$ insiemi. Si definisce <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>prodotto cartesiano</b></font></mark> di $A$ e $B$, e si denota con $A \times B$, l'insieme:
 > $$A \times B := \{z \in \mathcal{P}(\mathcal{P}(A \cup B)) \mid (\exists x \in A)(\exists y \in B)(z = (x, y))\}$$
 
 > [!info] Osservazione 1.5: Notazione Semplificata
@@ -179,7 +179,7 @@ END> %%
 
 ### Rappresentazione Geometrica ed Esempi
 
-Il termine "cartesiano" richiama l'impostazione geometrica introdotta da René Descartes (Cartesio): gli elementi di $A$ sono disposti lungo un asse orizzontale e quelli di $B$ lungo un asse verticale ortogonale. Ogni coppia $(x, y) \in A \times B$ individua un punto sul piano identificato dall'intersezione delle coordinate \[[[Lezione 3 FdM.pdf#page=2|Dispensa p. 2]]].
+Il termine "cartesiano" richiama l'impostazione geometrica introdotta da <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>René Descartes (Cartesio)</b></font></mark>: gli elementi di $A$ sono disposti lungo un asse orizzontale e quelli di $B$ lungo un asse verticale ortogonale. Ogni coppia $(x, y) \in A \times B$ individua un punto sul piano identificato dall'intersezione delle coordinate \[[[Lezione 3 FdM.pdf#page=2|Dispensa p. 2]]].
 
 > [!example] Esempio 1.6: Prodotti Cartesiani Finiti e Infiniti
 > 1. **Insiemi finiti:** Siano $A = \{a, b, c\}$ e $B = \{d, e\}$. Allora:
@@ -189,7 +189,7 @@ Il termine "cartesiano" richiama l'impostazione geometrica introdotta da René D
 
 ### Cardinalità del Prodotto Cartesiano
 
-Nel caso di insiemi finiti di cardinalità $|A| = n$ e $|B| = m$, il numero di elementi del prodotto cartesiano è dato dal principio fondamentale del calcolo combinatorio:
+Nel caso di insiemi finiti di cardinalità $|A| = n$ e $|B| = m$, il numero di elementi del prodotto cartesiano è dato dal <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>principio fondamentale del calcolo combinatorio</b></font></mark>:
 $$|A \times B| = |A| \cdot |B| = n \cdot m$$
 Per scegliere una coppia $(x, y)$, vi sono $n$ scelte possibili e indipendenti per la prima coordinata $x \in A$, e per ciascuna di esse vi sono $m$ scelte indipendenti per la seconda coordinata $y \in B$. Trattandosi di scelte tra loro indipendenti, le possibilità complessive si moltiplicano.
 
@@ -211,13 +211,13 @@ END> %%
 Il concetto di prodotto cartesiano permette di formalizzare in modo rigoroso qualsiasi legame tra oggetti matematici.
 
 > [!danger] Definizione 1.7: Relazione Binaria, Notazione Infissa e Dominio
-> Siano $A$ e $B$ due insiemi. Si definisce **relazione** (o corrispondenza) tra $A$ e $B$ un qualsiasi sottoinsieme del loro prodotto cartesiano:
+> Siano $A$ e $B$ due insiemi. Si definisce <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>relazione binaria</b></font></mark> (o corrispondenza) tra $A$ e $B$ un qualsiasi sottoinsieme del loro prodotto cartesiano:
 > $$R \subset A \times B$$
 > Se $(x, y) \in R$, si dice che $x$ è in relazione con $y$ secondo $R$, e si scrive:
 > $$x \xrightarrow{R} y$$
-> Una relazione tra $A$ e se stesso ($R \subset A \times A$) si chiama **relazione (binaria) su $A$**. In tal caso, per denotare che $(x, y) \in R$ si impiega comunemente la **notazione infissa**:
+> Una relazione tra $A$ e se stesso ($R \subset A \times A$) si chiama **relazione (binaria) su $A$**. In tal caso, per denotare che $(x, y) \in R$ si impiega comunemente la <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>notazione infissa</b></font></mark>:
 > $$x R y$$
-> Si definisce **dominio** della relazione $R$ il sottoinsieme degli elementi di $A$ che ammettono almeno un corrispondente in $B$:
+> Si definisce <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>dominio della relazione</b></font></mark> $R$ il sottoinsieme degli elementi di $A$ che ammettono almeno un corrispondente in $B$:
 > $$\operatorname{dom}(R) := \{x \in A \mid (\exists y \in B)((x, y) \in R)\}$$
 
 > [!tip]- Flashcard: Definizione di Relazione Binaria e Dominio
@@ -243,8 +243,8 @@ END> %%
 
 > [!example] Esempio 1.9: Grafi Orientati come Relazioni Binarie
 > Nella teoria dei grafi e nell'informatica teorica, un <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>grafo orientato</b></font></mark> (o *directed graph*) è una coppia ordinata $G = (V, E)$, dove:
-> - $V$ è un insieme non vuoto di elementi detti **vertici** (o nodi);
-> - $E \subset V \times V$ è una relazione binaria su $V$, i cui elementi sono detti **archi orientati** (o frecce).
+> - $V$ è un insieme non vuoto di elementi detti <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>vertici</b></font></mark> (o nodi);
+> - $E \subset V \times V$ è una relazione binaria su $V$, i cui elementi sono detti <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>archi orientati</b></font></mark> (o frecce).
 > Quando $(x, y) \in E$, si scrive $x \xrightarrow{E} y$, a indicare che esiste un arco che punta dal vertice $x$ al vertice $y$ \[[[Lezione 3 FdM.pdf#page=3|Dispensa p. 3]]].
 
 > [!tip]- Flashcard: Grafi Orientati come Relazioni Binarie
@@ -277,7 +277,7 @@ Per esempio, se $|A| = 4$ elementi:
   $$2^{16} = 65536$$
 
 > [!info] Perché la base è 2? Corrispondenza con le Funzioni Indicatrici
-> Come spiegato con insistenza dal prof. Salzo, la base $2$ non deriva dal fatto che le coppie sono formate da $2$ elementi!
+> Come spiegato con insistenza dal prof. <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Saverio Salzo</b></font></mark>, la base $2$ non deriva dal fatto che le coppie sono formate da $2$ elementi!
 > La base $2$ discende dal fatto che una proposizione logica ammette due soli valori di verità: Vero ($1$) o Falso ($0$).
 > Per definire un sottoinsieme $R \subset A \times A$, dobbiamo decidere per ciascuna delle $n^2$ coppie se essa appartiene o meno alla relazione:
 > - Scelta 1: la coppia $(x, y) \in R$ (valore $1$ / sì);
@@ -305,14 +305,14 @@ Come rimarcato criticamente dal docente, l'espressione "legge" è priva di citta
 Per conferire pieno rigore logico, nella teoria ZF una <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>funzione</b></font></mark> viene definita come una particolare terna ordinata formata da insiemi \[[[Lezione 3 FdM.pdf#page=4|Dispensa p. 4]]].
 
 > [!danger] Definizione 2.1: Funzione (Applicazione) e Relazione Funzionale
-> Siano $A$ e $B$ insiemi. Si chiama **funzione** (o **applicazione**) da $A$ a $B$ una terna ordinata:
+> Siano $A$ e $B$ insiemi. Si chiama <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>funzione</b></font></mark> (o applicazione) da $A$ a $B$ una terna ordinata:
 > $$f = (A, B, R)$$
-> dove $R \subset A \times B$ è una **relazione funzionale** tra $A$ e $B$, cioè tale che:
+> dove $R \subset A \times B$ è una <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>relazione funzionale</b></font></mark> tra $A$ e $B$, cioè tale che:
 > $$(\forall x \in A)(\exists! y \in B)((x, y) \in R)$$
 > Questa condizione di unicità esistenziale equivale al verificarsi simultaneo di due proprietà distinte:
-> 1. **Esistenza (o Totalità del Dominio):**
+> 1. <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Esistenza (o Totalità del Dominio)</b></font></mark>:
 >    $$(\forall x \in A)(\exists y \in B)((x, y) \in R) \iff \operatorname{dom}(R) = A$$
-> 2. **Unicità (o Univocità):**
+> 2. <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Unicità (o Univocità)</b></font></mark>:
 >    $$(\forall x \in A)(\forall y_1, y_2 \in B)(((x, y_1) \in R \land (x, y_2) \in R) \implies y_1 = y_2)$$
 
 Dalla definizione emergono i termini e le notazioni standard:
@@ -320,8 +320,8 @@ Dalla definizione emergono i termini e le notazioni standard:
 - Se $(x, y) \in R$, si scrive $x \stackrel{f}{\mapsto} y$ oppure $x \mapsto f(x)$;
 - La generica funzione da $A$ a $B$ si indica con la notazione compatta:
   $$f: A \to B$$
-- L'insieme $A$ si chiama **dominio** (o insieme di partenza) della funzione;
-- L'insieme $B$ si chiama **codominio** (o insieme di arrivo) della funzione;
+- L'insieme $A$ si chiama <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>dominio</b></font></mark> (o insieme di partenza) della funzione;
+- L'insieme $B$ si chiama <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>codominio</b></font></mark> (o insieme di arrivo) della funzione;
 - L'insieme di tutte le funzioni possibili da $A$ a $B$ si denota con:
   $$B^A$$
 
@@ -353,7 +353,7 @@ END> %%
 
 ### Cardinalità dell'Insieme delle Funzioni $B^A$
 
-Se $A$ e $B$ sono insiemi finiti di cardinalità $|A| = n$ e $|B| = m$, quante funzioni distinte appartengono a $B^A$?
+Se $A$ e $B$ sono insiemi finiti di cardinalità $|A| = n$ e $|B| = m$, la <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>cardinalità dell'insieme delle funzioni</b></font></mark> $B^A$ si determina considerando le scelte indipendenti per ogni elemento del dominio:
 - Per il primo elemento $x_1 \in A$, vi sono $m$ scelte possibili per $f(x_1) \in B$;
 - Per il secondo elemento $x_2 \in A$, vi sono $m$ scelte indipendenti per $f(x_2) \in B$;
 - Reiterando per tutti gli $n$ elementi di $A$, si ottiene:
@@ -389,14 +389,14 @@ Nella definizione $f = (A, B, R)$, la relazione funzionale $R$ contiene tutte le
 > [!info] Osservazione 2.2: Grafico di una Funzione
 > Sia $f: A \to B$ una funzione. La sua relazione funzionale $R$ si può riscrivere come:
 > $$R = \{z \in A \times B \mid (\exists x \in A)(z = (x, f(x)))\} = \{(x, f(x)) \in A \times B \mid x \in A\}$$
-> Tale insieme si chiama **grafico** della funzione $f$ e si denota con $G_f$.
+> Tale insieme si chiama <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>grafico della funzione</b></font></mark> $f$ e si denota con $G_f$.
 
 Poiché la relazione funzionale $R = G_f$ è univocamente determinata dai valori $f(x)$ assunti da $f$ su $A$, per assegnare una funzione è sufficiente specificare il dominio $A$, il codominio $B$ e la legge che associa ad ogni $x \in A$ il valore $f(x)$.
 
 ### Criterio Geometrico della Retta Verticale
 
 Quando $A, B \subset \mathbb{R}$, il grafico $G_f$ è un sottoinsieme del piano cartesiano $\mathbb{R}^2$.
-La condizione di funzionalità si traduce nel noto **test della retta verticale**:
+La condizione di funzionalità si traduce nel noto <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>test della retta verticale</b></font></mark>:
 - Un sottoinsieme $G \subset A \times \mathbb{R}$ è il grafico di una funzione $f: A \to \mathbb{R}$ se e solo se **ogni retta verticale $x = x_0$ con $x_0 \in A$ interseca $G$ in uno ed un solo punto**.
 - Se per un certo $x_0 \in A$ la retta verticale non incontra la curva, cade la condizione di esistenza ($\operatorname{dom}(f) \ne A$);
 - Se una retta verticale interseca la curva in due o più punti distinti (come nel caso della circonferenza $x^2 + y^2 = r^2$), cade la condizione di unicità e la curva non rappresenta una funzione.
@@ -421,15 +421,15 @@ END> %%
 > [!example] Esempio 2.3: Funzione Identità e Iniezione Canonica
 > 1. **Funzione Identità:** Sia $A$ un insieme. La funzione $i_A: A \to A$ definita ponendo per ogni $x \in A$:
 >    $$i_A(x) = x$$
->    si chiama **funzione identità** di $A$. Formalmente si definisce come la terna $i_A = (A, A, \Delta_A)$, dove $\Delta_A$ è la diagonale di $A \times A$:
+>    si chiama <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>funzione identità</b></font></mark> di $A$. Formalmente si definisce come la terna $i_A = (A, A, \Delta_A)$, dove $\Delta_A$ è la <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>diagonale</b></font></mark> di $A \times A$:
 >    $$\Delta_A := \{(x, x) \in A \times A \mid x \in A\}$$
 > 2. **Iniezione (o Immersione) Canonica:** Sia $A$ un insieme e sia $X \subset A$ un suo sottoinsieme. La funzione $j_X: X \to A$ definita da:
 >    $$(\forall x \in X) \, j_X(x) = x$$
->    si chiama **iniezione canonica** (o immersione) di $X$ in $A$. Formalmente essa è la terna $j_X = (X, A, R)$, dove $R = \{(x, x) \in X \times A \mid x \in X\}$ \[[[Lezione 3 FdM.pdf#page=6|Dispensa p. 6]]].
+>    si chiama <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>iniezione canonica</b></font></mark> (o immersione) di $X$ in $A$. Formalmente essa è la terna $j_X = (X, A, R)$, dove $R = \{(x, x) \in X \times A \mid x \in X\}$ \[[[Lezione 3 FdM.pdf#page=6|Dispensa p. 6]]].
 
 > [!info] Osservazione 2.4: Dominio Naturale (o Massimale)
 > Spesso nell'analisi reale una funzione viene introdotta fornendo unicamente la sua espressione analitica $f(x)$ (es. $f(x) = \sqrt{x^2 - 1}$), omettendo il dominio.
-> In tali circostanze si sottintende convenzionalmente che il dominio sia il **dominio naturale** (o massimale), ossia il più grande sottoinsieme di $\mathbb{R}$ per il quale l'operazione ha senso matematico.
+> In tali circostanze si sottintende convenzionalmente che il dominio sia il <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>dominio naturale (o massimale)</b></font></mark>, ossia il più grande sottoinsieme di $\mathbb{R}$ per il quale l'operazione ha senso matematico.
 
 > [!tip]- Flashcard: Funzione Identità e Iniezione Canonica
 %%
@@ -452,10 +452,10 @@ Data una funzione $f: A \to B$, è possibile trasformare non solo singoli elemen
 
 > [!danger] Definizione 2.5: Immagine Diretta e Controimmagine
 > Sia $f: A \to B$ una funzione. Siano $X \subset A$ e $Y \subset B$.
-> 1. Si definisce **immagine (diretta)** di $X$ mediante $f$ il sottoinsieme di $B$:
+> 1. Si definisce <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>immagine diretta</b></font></mark> di $X$ mediante $f$ il sottoinsieme di $B$:
 >    $$f(X) := \{y \in B \mid (\exists x \in X)(f(x) = y)\} = \{f(x) \in B \mid x \in X\}$$
->    In particolare, l'insieme $f(A) \subset B$ si chiama **immagine della funzione $f$** (denotata anche con $\operatorname{Im}(f)$).
-> 2. Si definisce **controimmagine** (o **immagine inversa**, o **preimmagine**) di $Y$ mediante $f$ il sottoinsieme di $A$:
+>    In particolare, l'insieme $f(A) \subset B$ si chiama <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>immagine della funzione</b></font></mark> $f$ (denotata anche con $\operatorname{Im}(f)$).
+> 2. Si definisce <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>controimmagine</b></font></mark> (o preimmagine) di $Y$ mediante $f$ il sottoinsieme di $A$:
 >    $$f^{-1}(Y) := \{x \in A \mid f(x) \in Y\}$$
 
 > [!warning] Avvertenza Notazionale Critica
@@ -505,16 +505,16 @@ L'interazione tra immagini, controimmagini e le operazioni booleane di unione e 
 
 > [!summary] Proposizione 2.7: Proprietà Fondamentali di Immagini e Controimmagini
 > Siano $f: A \to B$ una funzione, $X, X_1, X_2 \subset A$ e $Y, Y_1, Y_2 \subset B$. Allora valgono le seguenti proprietà:
-> 1. **Monotonia:**
+> 1. <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Monotonia</b></font></mark>:
 >    - $X_1 \subset X_2 \implies f(X_1) \subset f(X_2)$
 >    - $Y_1 \subset Y_2 \implies f^{-1}(Y_1) \subset f^{-1}(Y_2)$
-> 2. **Conservazione dell'Unione:**
+> 2. <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Conservazione dell'Unione</b></font></mark>:
 >    - $f(X_1 \cup X_2) = f(X_1) \cup f(X_2)$
 >    - $f^{-1}(Y_1 \cup Y_2) = f^{-1}(Y_1) \cup f^{-1}(Y_2)$
-> 3. **Comportamento rispetto all'Intersezione (Asimmetria):**
+> 3. <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Asimmetria dell'Intersezione</b></font></mark>:
 >    - $f(X_1 \cap X_2) \subset f(X_1) \cap f(X_2)$ (inclusione in generale stretta!)
 >    - $f^{-1}(Y_1 \cap Y_2) = f^{-1}(Y_1) \cap f^{-1}(Y_2)$ (uguaglianza esatta!)
-> 4. **Composizione di Immagine e Controimmagine:**
+> 4. <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Composizione di Immagine e Controimmagine</b></font></mark>:
 >    - $X \subset f^{-1}(f(X))$
 >    - $f(f^{-1}(Y)) \subset Y$
 
@@ -596,7 +596,7 @@ END> %%
 Spesso è necessario limitare l'azione di una funzione a una porzione del suo dominio originale \[[[Lezione 3 FdM.pdf#page=7|Dispensa p. 7]]].
 
 > [!danger] Definizione 2.8: Restrizione di una Funzione
-> Sia $f: A \to B$ una funzione e sia $X \subset A$. Si chiama **restrizione** di $f$ a $X$, e si denota con $f|_X$, la funzione:
+> Sia $f: A \to B$ una funzione e sia $X \subset A$. Si chiama <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>restrizione</b></font></mark> di $f$ a $X$, e si denota con $f|_X$, la funzione:
 > $$f|_X: X \to B \quad \text{tale che} \quad (\forall x \in X) \, f|_X(x) = f(x)$$
 > In termini formali, se $f = (A, B, R)$, la restrizione è la terna ordinata $f|_X = (X, B, R|_X)$, dove:
 > $$R|_X := \{(x, y) \in R \mid x \in X\} = R \cap (X \times B)$$
@@ -623,21 +623,21 @@ END> %%
 Nella pratica matematica avanzata e nell'analisi, le successioni numeriche, le collezioni di insiemi e le serie sono formalizzate come particolari funzioni il cui dominio funge da insieme di indici \[[[Lezione 3 FdM.pdf#page=7|Dispensa p. 7]]].
 
 > [!danger] Definizione 2.9: Famiglia di Elementi
-> Siano $I$ e $A$ due insiemi. Una funzione $a: I \to A$ si chiama **famiglia di elementi di $A$ indicizzata da $I$**.
+> Siano $I$ e $A$ due insiemi. Una funzione $a: I \to A$ si chiama <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>famiglia di elementi indicizzata</b></font></mark> da $I$.
 > In tale contesto:
 > - L'immagine dell'indice $i \in I$ mediante $a$ si denota con $a_i$ anziché $a(i)$;
 > - La funzione stessa si denota con il simbolo $(a_i)_{i \in I}$;
-> - Il dominio $I$ si chiama **insieme degli indici** della famiglia.
+> - Il dominio $I$ si chiama <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>insieme degli indici</b></font></mark> della famiglia.
 
-Se $I = \mathbb{N}$, la famiglia $(a_n)_{n \in \mathbb{N}}$ prende il nome di **successione** di elementi di $A$.
+Se $I = \mathbb{N}$, la famiglia $(a_n)_{n \in \mathbb{N}}$ prende il nome di <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>successione</b></font></mark> di elementi di $A$.
 
 ### Famiglie di Parti e Operazioni Generalizzate
 
 Quando gli elementi della famiglia sono a loro volta insiemi (cioè sottoinsiemi di un dato insieme $A$), la funzione assume valori nell'insieme delle parti \[[[Lezione 3 FdM.pdf#page=7|Dispensa p. 7]]].
 
 > [!danger] Definizione 2.10: Famiglia di Parti, Unione e Intersezione Generalizzata
-> Siano $I$ e $A$ due insiemi. Una funzione $F: I \to \mathcal{P}(A)$ si chiama **famiglia di parti di $A$** e si denota con $(F_i)_{i \in I}$.
-> Si definiscono l'**unione** e l'**intersezione** della famiglia $(F_i)_{i \in I}$ rispettivamente come:
+> Siano $I$ e $A$ due insiemi. Una funzione $F: I \to \mathcal{P}(A)$ si chiama <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>famiglia di parti</b></font></mark> di $A$ e si denota con $(F_i)_{i \in I}$.
+> Si definiscono l'<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>unione generalizzata</b></font></mark> e l'<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>intersezione generalizzata</b></font></mark> della famiglia $(F_i)_{i \in I}$ rispettivamente come:
 > $$\bigcup_{i \in I} F_i := \{x \in A \mid (\exists i \in I)(x \in F_i)\}$$
 > $$\bigcap_{i \in I} F_i := \{x \in A \mid (\forall i \in I)(x \in F_i)\}$$
 
