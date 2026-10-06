@@ -135,7 +135,7 @@ A partire da proposizioni atomiche, è possibile costruire espressioni più arti
 Le <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>tabelle di verità</b></font></mark> costituiscono lo strumento sistematico per enumerare tutti i possibili valori di verità assunti da una formula composta al variare delle combinazioni di verità delle variabili componenti.
 
 #### Negazione ($\neg P$)
-L'operatore monadico inverte il valore di verità della proposizione d'ingresso \[[[Lezione 1 FdM.pdf#page=2|Appunti p. 2]]]:
+L'operatore monadico di <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>negazione</b></font></mark> inverte il valore di verità della proposizione d'ingresso \[[[Lezione 1 FdM.pdf#page=2|Appunti p. 2]]]:
 
 | $P$ | $\neg P$ |
 | :---: | :---: |
@@ -154,8 +154,8 @@ Per chiarire la semantica dei connettivi binari, il docente propone l'analogia g
 | F | V | F | **V** |
 | F | F | F | **F** |
 
-- **Congiunzione ($P \land Q$):** è vera **esclusivamente** quando entrambe le proposizioni $P$ e $Q$ sono vere.
-- **Disgiunzione ($P \lor Q$):** è falsa **esclusivamente** quando entrambe le proposizioni $P$ e $Q$ sono false; in matematica si adotta **rigorosamente solo la disgiunzione inclusiva** ($P \lor Q$ è vera anche quando sia $P$ sia $Q$ sono entrambe vere). Questo principio si ricollega direttamente alla definizione di unione tra insiemi in [[02 - Teoria degli Insiemi]] e [[01 - Teoria degli Insiemi, Spazio Campionario e Prime Nozioni di Probabilità]].
+- **Congiunzione ($P \land Q$):** la <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>congiunzione</b></font></mark> è vera **esclusivamente** quando entrambe le proposizioni $P$ e $Q$ sono vere.
+- **Disgiunzione ($P \lor Q$):** è falsa **esclusivamente** quando entrambe le proposizioni $P$ e $Q$ sono false; in matematica si adotta **rigorosamente solo la <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>disgiunzione inclusiva</b></font></mark>** ($P \lor Q$ è vera anche quando sia $P$ sia $Q$ sono entrambe vere). Questo principio si ricollega direttamente alla definizione di unione tra insiemi in [[02 - Teoria degli Insiemi]] e [[01 - Teoria degli Insiemi, Spazio Campionario e Prime Nozioni di Probabilità]].
 
 > [!tip]- Flashcard: Congiunzione e Disgiunzione Inclusiva
 %%
@@ -170,7 +170,7 @@ END
 %%
 
 #### Implicazione Materiale ($P \implies Q$)
-La proposizione condizionale $P \implies Q$ ("se $P$, allora $Q$") vincola l'ipotesi $P$ alla tesi $Q$ \[[[Lezione 1 FdM.pdf#page=3|Appunti p. 3]]]:
+La proposizione condizionale dell'<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>implicazione materiale</b></font></mark> $P \implies Q$ ("se $P$, allora $Q$") vincola l'ipotesi $P$ alla tesi $Q$ \[[[Lezione 1 FdM.pdf#page=3|Appunti p. 3]]]:
 
 | $P$ | $Q$ | $P \implies Q$ |
 | :---: | :---: | :---: |
@@ -214,7 +214,7 @@ Nell'implicazione $P \implies Q$:
 > %%
 
 #### Equivalenza Logica ($P \iff Q$)
-L'equivalenza (o bicondizionale, "se e solo se") stabilisce che due proposizioni possiedono sempre il medesimo valore di verità \[[[Lezione 1 FdM.pdf#page=3|Appunti p. 3]]]:
+L'<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>equivalenza logica</b></font></mark> (o bicondizionale, "se e solo se") stabilisce che due proposizioni possiedono sempre il medesimo valore di verità \[[[Lezione 1 FdM.pdf#page=3|Appunti p. 3]]]:
 
 | $P$ | $Q$ | $P \iff Q$ |
 | :---: | :---: | :---: |
@@ -248,7 +248,7 @@ Una formula proposizionale che risulta sempre vera per qualsiasi attribuzione di
 > [!danger] Assioma / Principio Fondamentale: Legge del Terzo Escluso (Tertium Non Datur)
 > Per qualunque proposizione $P$:
 > $$P \lor (\neg P) \equiv V$$
-> Una proposizione è o vera o falsa: non esiste una terza alternativa logica nel sistema classico bivalente.
+> In virtù della <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>legge del terzo escluso</b></font></mark> (<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>tertium non datur</b></font></mark>), una proposizione è o vera o falsa: non esiste una terza alternativa logica nel sistema classico bivalente.
 
 > [!tip]- Flashcard: Legge del Terzo Escluso (Tertium Non Datur)
 %%
@@ -264,7 +264,7 @@ Tags: education/university education/math tech/logic
 END
 %%
 
-> [!danger] Teorema: Leggi di De Morgan del Calcolo Proposizionale
+> [!danger] Teorema: <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Leggi di De Morgan</b></font></mark> del Calcolo Proposizionale
 > Siano $P$ e $Q$ due proposizioni. Valgono le equivalenze tautologiche:
 > 1. $\neg(P \land Q) \iff (\neg P) \lor (\neg Q)$
 > 2. $\neg(P \lor Q) \iff (\neg P) \land (\neg Q)$
@@ -284,7 +284,7 @@ END
 > END
 > %%
 
-> [!danger] Teorema: Legge della Contronominale (Contrapposizione Logica)
+> [!danger] Teorema: <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Legge della Contronominale</b></font></mark> (<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Contrapposizione Logica</b></font></mark>)
 > Siano $P$ e $Q$ due proposizioni. Vale l'equivalenza:
 > $$(P \implies Q) \iff (\neg Q \implies \neg P)$$
 > Un'implicazione diretta è perfettamente equivalente alla sua implicazione contronominale, ottenuta scambiando ipotesi e tesi e negandole entrambe.
@@ -301,7 +301,7 @@ END
 > END
 > %%
 
-> [!summary] Metodo di Dimostrazione: Riduzione all'Assurdo (Reductio ad Absurdum)
+> [!summary] Metodo di Dimostrazione: <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Dimostrazione per Assurdo</b></font></mark> (<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Reductio ad Absurdum</b></font></mark>)
 > Siano $P$ l'ipotesi e $Q$ la tesi. La dimostrazione per assurdo si fonda sulla tautologia:
 > $$(P \implies Q) \iff [(P \land \neg Q) \implies (R \land \neg R)]$$
 > dove $R \land \neg R$ rappresenta una contraddizione ($F$). Se assumendo simultaneamente vera l'ipotesi $P$ e falsa la tesi ($\neg Q$) si deduce una contraddizione logica, allora l'assunzione $\neg Q$ è insostenibile e la tesi $Q$ deve essere necessariamente **vera**.
@@ -327,7 +327,7 @@ END
 La logica delle proposizioni considera gli enunciati come blocchi indivisibili. Per esprimere proprietà matematiche dipendenti da variabili è necessario passare alla <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>logica dei predicati</b></font></mark> \[[[Lezione 1 FdM.pdf#page=5|Appunti p. 5]]].
 
 > [!danger] Definizione: Predicato Logico (Proposizione Aperta)
-> Un **predicato** (denotato con $P(x)$, $Q(x, y)$, ecc.) è un'espressione del linguaggio che contiene una o più variabili e che si trasforma in una proposizione (dotata di valore di verità vero o falso) non appena alle variabili viene sostituito un valore specifico del loro dominio di interpretazione.
+> Un <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>predicato</b></font></mark> (o <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>proposizione aperta</b></font></mark>, denotato con $P(x)$, $Q(x, y)$, ecc.) è un'espressione del linguaggio che contiene una o più variabili e che si trasforma in una proposizione (dotata di valore di verità vero o falso) non appena alle variabili viene sostituito un valore specifico del loro dominio di interpretazione.
 
 > [!tip]- Flashcard: Definizione di Predicato Logico
 %%
@@ -352,8 +352,8 @@ END
 
 > [!info] Osservazione: Variabili Libere e Legate
 > In un'espressione matematica:
-> - Una variabile si dice **legata (o vincolata)** se ricade all'interno del campo d'azione di un quantificatore $(\forall x)$ o $(\exists x)$.
-> - Una variabile si dice **libera** se non è vincolata da alcun quantificatore. Nell'Assioma 4 di specificazione di [[02 - Teoria degli Insiemi]], il predicato $P(x)$ richiede espressamente che la variabile $x$ compaia libera.
+> - Una variabile si dice <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>legata (o vincolata)</b></font></mark> se ricade all'interno del campo d'azione di un quantificatore $(\forall x)$ o $(\exists x)$.
+> - Una variabile si dice <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>libera</b></font></mark> se non è vincolata da alcun quantificatore. Nell'Assioma 4 di specificazione di [[02 - Teoria degli Insiemi]], il predicato $P(x)$ richiede espressamente che la variabile $x$ compaia libera.
 
 > [!tip]- Flashcard: Variabili Libere vs Variabili Legate
 %%
@@ -375,7 +375,7 @@ END
 
 Quando la negazione interagisce con i quantificatori, scambia il tipo di quantificatore e si applica internamente al predicato \[[[Lezione 1 FdM.pdf#page=6|Appunti p. 6]]]:
 
-> [!danger] Teorema: Negazione dei Quantificatori
+> [!danger] Teorema: <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Negazione dei Quantificatori</b></font></mark>
 > Per ogni proposizione aperta $P(x)$:
 > $$\neg [(\forall x) \, P(x)] \iff (\exists x) \, \neg P(x)$$
 > $$\neg [(\exists x) \, P(x)] \iff (\forall x) \, \neg P(x)$$
@@ -397,7 +397,7 @@ Quando la negazione interagisce con i quantificatori, scambia il tipo di quantif
 
 ### 2. Quantificatori Multipli e Dipendenze
 
-Nelle formule con più quantificatori, l'ordine di scrittura definisce la dipendenza logica e **non è permutabile** \[[[Lezione 1 FdM.pdf#page=7|Appunti p. 7]]]. Ad esempio:
+Nelle formule con <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>quantificatori multipli</b></font></mark>, l'ordine di scrittura definisce la dipendenza logica e **non è permutabile** \[[[Lezione 1 FdM.pdf#page=7|Appunti p. 7]]]. Ad esempio:
 - $(\forall x) (\exists y) \, P(x, y)$: per ogni elemento $x$, esiste un $y$ (che può dipendere dalla scelta di $x$);
 - $(\exists y) (\forall x) \, P(x, y)$: esiste un elemento universale $y$ che va bene simultaneamente per tutti gli $x$.
 
@@ -419,12 +419,12 @@ END
 
 Il docente illustra l'efficacia della dimostrazione per contronominale su un classico teorema di aritmetica dei numeri interi \[[[Lezione 1 FdM.pdf#page=8|Appunti p. 8]]]:
 
-> [!danger] Teorema: Parità del Quadrato e Dimostrazione per Contronominale
+> [!danger] Teorema: Parità del Quadrato e <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Dimostrazione per Contronominale</b></font></mark>
 > Sia $x \in \mathbb{N}^+$. Vale l'implicazione:
 > $$(\forall x) \, (x^2 \text{ è pari} \implies x \text{ è pari})$$
 > 
 > **Dimostrazione per Contronominale:**
-> L'implicazione diretta $(P \implies Q)$ equivale logicamente alla contronominale $(\neg Q \implies \neg P)$:
+> L'implicazione diretta $(P \implies Q)$ equivale logicamente all'<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>implicazione contronominale</b></font></mark> $(\neg Q \implies \neg P)$:
 > $$(\forall x) \, (x \text{ è dispari} \implies x^2 \text{ è dispari})$$
 > 
 > 1. **Ipotesi contronominale:** assumiamo che $x$ sia un intero positivo dispari.
