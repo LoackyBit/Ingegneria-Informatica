@@ -287,7 +287,7 @@ END
 
 ### Genesi Storica e Filosofia di Progetto
 
-Python è stato creato a cavallo tra gli anni Ottanta e Novanta dal programmatore olandese Guido van Rossum presso il CWI di Amsterdam \[[[Introduzione alla Programmazione - Lezione 01 - Slide.pdf#page=48|Slide 48]]]. Il nome è un tributo al celebre gruppo comico britannico dei *Monty Python* e alla trasmissione *Monty Python’s Flying Circus* \[[[Introduzione alla Programmazione - Lezione 01 - Slide.pdf#page=49|Slide 49]]].
+Python è stato creato a cavallo tra gli anni Ottanta e Novanta dal programmatore olandese <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Guido van Rossum</b></font></mark> presso il CWI di Amsterdam \[[[Introduzione alla Programmazione - Lezione 01 - Slide.pdf#page=48|Slide 48]]]. Il nome è un tributo al celebre gruppo comico britannico dei *Monty Python* e alla trasmissione *Monty Python’s Flying Circus* \[[[Introduzione alla Programmazione - Lezione 01 - Slide.pdf#page=49|Slide 49]]].
 
 Al medesimo immaginario è legata l'origine informatica del termine **spam**: il celebre sketch comico in cui ogni piatto servito nella taverna contiene immancabilmente carne in scatola "Spam" ha ispirato l'adozione del vocabolo per indicare messaggi non richiesti e ripetitivi.
 
@@ -296,8 +296,8 @@ Guido van Rossum è stato per quasi trent'anni il *Benevolent Dictator For Life*
 ### Caratteristiche del Linguaggio
 
 1. **Linguaggio Multi-Paradigma:** Supporta in modo integrato programmazione imperativa, orientata agli oggetti e costrutti di tipo funzionale \[[[Introduzione alla Programmazione - Lezione 01 - Slide.pdf#page=51|Slide 51]]].
-2. **Tipizzazione Forte e Dinamica (*Strong Dynamically Typed*):** Le variabili non richiedono dichiarazione esplicita del tipo (il tipo è proprietà del valore a runtime), ma l'interprete impedisce conversioni implicite incoerenti tra tipi non compatibili.
-3. **Gestione Automatica della Memoria (<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Garbage Collection</b></font></mark>):** La liberazione della memoria per oggetti non più utilizzati è gestita in background dal sistema mediante conteggio dei riferimenti e spazzamento dei cicli \[[[Introduzione alla Programmazione - Lezione 01 - Slide.pdf#page=52|Slide 52]]].
+2. <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Tipizzazione Forte e Dinamica</b></font></mark> (*Strong Dynamically Typed*): Le variabili non richiedono dichiarazione esplicita del tipo (il tipo è proprietà del valore a runtime), ma l'interprete impedisce conversioni implicite incoerenti tra tipi non compatibili.
+3. **Gestione Automatica della Memoria** (<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Garbage Collection</b></font></mark>): La liberazione della memoria per oggetti non più utilizzati è gestita in background dal sistema mediante conteggio dei riferimenti e spazzamento dei cicli \[[[Introduzione alla Programmazione - Lezione 01 - Slide.pdf#page=52|Slide 52]]].
 4. **Batteries Included:** La libreria standard include una vastissima dotazione di moduli integrati per manipolazione dati, matematica, formati file e comunicazioni di rete.
 
 > [!tip]- Flashcard: Tipizzazione Forte e Dinamica in Python
@@ -316,11 +316,11 @@ END
 
 Python adotta un'architettura di esecuzione ibrida a due stadi \[[[Introduzione alla Programmazione - Lezione 01 - Slide.pdf#page=53|Slide 53]]]:
 
-1. **Pre-compilazione in <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Bytecode</b></font></mark>:**
+1. Pre-compilazione in <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Bytecode</b></font></mark>:
    - I file di testo sorgente `.py` vengono analizzati dal controllore sintattico.
    - Se il codice rispetta le regole grammaticali, viene tradotto in un formato intermedio compatto e indipendente dall'hardware: il **bytecode**.
    - Il bytecode viene salvato in file `.pyc` (nella cartella `__pycache__`) per consentire il riutilizzo immediato nelle esecuzioni successive senza dover ripetere la verifica sintattica.
-2. **Esecuzione tramite la <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Python Virtual Machine (PVM)</b></font></mark>:**
+2. Esecuzione tramite la <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Python Virtual Machine (PVM)</b></font></mark>:
    - La PVM è un'applicazione reale che emula il funzionamento di una CPU virtuale.
    - Legge il bytecode istruzione per istruzione e lo interpreta traducendolo nelle chiamate appropriate per il sistema operativo sottostante.
 
