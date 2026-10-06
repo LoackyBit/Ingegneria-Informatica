@@ -7,7 +7,7 @@ aliases: ["Ingegneria Informatica 2026-27 MOC", "Ingegneria Informatica 2026 - 2
 source: original
 title: "Ingegneria Informatica 2026/27"
 date: '2026-09-25'
-updated: 2026-10-01T18:41
+updated: 2026-10-06T08:24
 tags: [education/university, education/moc, tech/engineering, tech/cs]
 summary: "Hub generale e matrice PACRAR per la Laurea Triennale in Ingegneria Informatica 2026-27 (Sapienza Università di Roma, 1° Anno, 1° Semestre)."
 ---
