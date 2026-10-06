@@ -65,7 +65,7 @@ Il docente precisa che in ambito matematico si preferisce l'espressione "collezi
 Per comprendere il motivo profondo per cui l'insieme delle parti viene denotato con il simbolo esponenziale $2^A$, consideriamo un sottoinsieme arbitrario $B \subseteq A$. Esiste un modo canonico e univoco di descrivere l'appartenenza a $B$ attraverso una funzione a valori nell'insieme binario $\{0, 1\}$.
 
 > [!info] Definizione: Funzione Indicatrice (o Caratteristica)
-> Sia $A$ un insieme e sia $B \subseteq A$. Si definisce **funzione indicatrice** (o *funzione caratteristica*, denotata con $f_B$ o $\mathbf{1}_B$) l'applicazione $f_B: A \to \{0, 1\}$ definita puntualmente da:
+> Sia $A$ un insieme e sia $B \subseteq A$. Si definisce <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>funzione indicatrice</b></font></mark> (o *funzione caratteristica*, denotata con $f_B$ o $\mathbf{1}_B$) l'applicazione $f_B: A \to \{0, 1\}$ definita puntualmente da:
 > $$f_B(a) := \begin{cases} 1 & \text{se } a \in B \\ 0 & \text{se } a \notin B \end{cases}$$
 > 
 > - **Ipotesi:** $A$ insieme non vuoto, $B$ arbitrario sottoinsieme di $A$ ($B \in 2^A$).
@@ -95,7 +95,7 @@ La funzione indicatrice stabilisce un ponte concettuale perfetto tra sottoinsiem
 2. **Da funzione a sottoinsieme:** Data una qualunque funzione binaria $g: A \to \{0, 1\}$, essa individua in modo univoco un sottoinsieme di $A$ prendendo la controimmagine dell'elemento $1$ (come formalizzato in [[03 - Funzioni (Parte I)]]):
    $$B_g := \{a \in A \mid g(a) = 1\} = g^{-1}(\{1\})$$
 
-Poiché tale corrispondenza è biunivoca (bigezione), i due insiemi sono isomorfi:
+Poiché tale corrispondenza è biunivoca (<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>bigezione</b></font></mark>), i due insiemi sono isomorfi:
 
 $$\mathcal{P}(A) \cong \{0, 1\}^A$$
 
@@ -289,18 +289,18 @@ Per costruire una teoria rigorosa valida per qualsiasi fenomeno aleatorio (finit
 
 ### La Misura di Probabilità
 
-La probabilità non è un semplice numero, ma una **funzione d'insieme** (o *misura*) che assegna a ciascun evento $E$ dello spazio delle parti un valore numerico reale nell'intervallo chiuso $[0, 1]$:
+La probabilità non è un semplice numero, ma una <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>misura di probabilità</b></font></mark> (funzione d'insieme) che assegna a ciascun evento $E$ dello spazio delle parti un valore numerico reale nell'intervallo chiuso $[0, 1]$:
 
 $$\mathbb{P}: 2^\Omega \to [0, 1], \quad E \mapsto \mathbb{P}(E)$$
 
 > [!danger] Definizione: Spazio di Probabilità e Assiomi di Kolmogorov
-> Uno **spazio di probabilità** è una struttura $(\Omega, 2^\Omega, \mathbb{P})$ dove $\Omega$ è lo spazio campionario, $2^\Omega$ è la famiglia degli eventi ammissibili, e $\mathbb{P}: 2^\Omega \to [0, 1]$ è una funzione che soddisfa i seguenti tre assiomi fondamentali \[[[Dispense Statistica e Probabilità.pdf#page=17|Dispense p. 17]]]:
+> Uno <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>spazio di probabilità</b></font></mark> è una struttura $(\Omega, 2^\Omega, \mathbb{P})$ dove $\Omega$ è lo spazio campionario, $2^\Omega$ è la famiglia degli eventi ammissibili, e $\mathbb{P}: 2^\Omega \to [0, 1]$ è una funzione che soddisfa i seguenti tre assiomi fondamentali \[[[Dispense Statistica e Probabilità.pdf#page=17|Dispense p. 17]]]:
 > 
-> 1. **Assioma 1 (Non-negatività e Limitatezza):** Per ogni evento $E \subseteq \Omega$:
+> 1. <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Assioma 1 (Non-negatività e Limitatezza)</b></font></mark>: Per ogni evento $E \subseteq \Omega$:
 >    $$\mathbb{P}(E) \in [0, 1] \quad (\text{ovvero } 0 \le \mathbb{P}(E) \le 1)$$
-> 2. **Assioma 2 (Normalizzazione dell'Evento Certo):**
+> 2. <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Assioma 2 (Normalizzazione dell'Evento Certo)</b></font></mark>:
 >    $$\mathbb{P}(\Omega) = 1$$
-> 3. **Assioma 3 ($\sigma$-additività / Additività Numerabile):** Per ogni successione di eventi $E_1, E_2, \dots, E_n, \dots \in 2^\Omega$ a due a due incompatibili ($E_i \cap E_j = \emptyset$ per ogni $i \ne j$):
+> 3. <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Assioma 3 ($\sigma$-additività)</b></font></mark>: Per ogni successione di eventi $E_1, E_2, \dots, E_n, \dots \in 2^\Omega$ a due a due incompatibili ($E_i \cap E_j = \emptyset$ per ogni $i \ne j$):
 >    $$\mathbb{P}\left(\bigcup_{j=1}^{+\infty} E_j\right) = \sum_{j=1}^{+\infty} \mathbb{P}(E_j)$$
 
 > [!tip]- Flashcard: Assiomi di Kolmogorov
@@ -340,7 +340,7 @@ A partire esclusivamente dai tre assiomi di Kolmogorov, si deducono in modo dedu
 ### 5.1 Probabilità dell'Evento Impossibile $\mathbb{P}(\emptyset) = 0$
 
 > [!summary] Proposizione 1: Probabilità dell'Insieme Vuoto
-> L'evento impossibile ha probabilità identicamente nulla:
+> L'<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>evento impossibile</b></font></mark> ha probabilità identicamente nulla:
 > $$\mathbb{P}(\emptyset) = 0$$
 
 > [!info] Dimostrazione Formale del Docente
@@ -388,7 +388,7 @@ A partire esclusivamente dai tre assiomi di Kolmogorov, si deducono in modo dedu
 L'Assioma 3 postula l'additività su successioni infinite numerabili. In molte applicazioni reali si manipolano solo due o un numero finito $n$ di eventi.
 
 > [!danger] Teorema: Additività Finita
-> Siano $A, B \subseteq \Omega$ due eventi incompatibili ($A \cap B = \emptyset$). Allora:
+> Siano $A, B \subseteq \Omega$ due eventi incompatibili ($A \cap B = \emptyset$). La proprietà di <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>additività finita</b></font></mark> stabilisce che:
 > $$\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B)$$
 > 
 > Più in generale, per una collezione finita di $n$ eventi $E_1, \dots, E_n \subseteq \Omega$ a due a due incompatibili ($E_i \cap E_j = \emptyset$ per $i \ne j$):
@@ -433,7 +433,7 @@ L'Assioma 3 postula l'additività su successioni infinite numerabili. In molte a
 ### 5.3 Probabilità dell'Evento Complementare
 
 > [!danger] Teorema: Probabilità del Complementare
-> Per ogni evento $A \subseteq \Omega$, la probabilità del suo evento complementare $A^\complement = \Omega \setminus A$ è data da:
+> Per ogni evento $A \subseteq \Omega$, la <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>probabilità del complementare</b></font></mark> $A^\complement = \Omega \setminus A$ è data da:
 > $$\mathbb{P}(A^\complement) = 1 - \mathbb{P}(A)$$
 
 ![[Schema - Diagramma di Eulero-Venn - Complementare.png]]
