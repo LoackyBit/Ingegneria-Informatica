@@ -628,11 +628,11 @@ L'operazione di successivo permette di generare potenzialmente ciascun numero na
 > [!danger] Assioma 8: Assioma dell'Infinito
 > Esiste un insieme che contiene l'insieme vuoto $\emptyset$ e il successivo di ogni suo elemento. In formule, esiste un insieme $W$ tale che:
 > $$\emptyset \in W \quad \land \quad (\forall x) \, (x \in W \implies x^+ \in W)$$
-> Un insieme che soddisfa tale proprietà prende il nome di **insieme induttivo**.
+> Un insieme che soddisfa tale proprietà prende il nome di <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>insieme induttivo</b></font></mark>.
 
 Se $\mathcal{F}$ è una famiglia non vuota di insiemi induttivi, la loro intersezione $\bigcap_{A \in \mathcal{F}} A$ è ancora un insieme induttivo. Da questo principio discende il teorema fondativo dell'esistenza dei numeri naturali:
 
-> [!danger] Teorema 2.2: Esistenza e Caratterizzazione di $\mathbb{N}$
+> [!danger] Teorema 2.2: <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Esistenza e Caratterizzazione di $\mathbb{N}$</b></font></mark>
 > Esiste il più piccolo insieme induttivo, e tale insieme si denota con $\mathbb{N}$ (l'insieme dei numeri naturali).
 > 
 > **Dimostrazione Formale:**
@@ -669,7 +669,7 @@ La costruzione del sistema assiomatico ZFC si conclude con l'<mark style="backgr
 > esiste un insieme $X \subset \bigcup_{A \in \mathcal{F}} A$ tale che, per ogni insieme $A \in \mathcal{F}$, l'intersezione $A \cap X$ è ridotta ad un solo elemento:
 > $$(\forall A \in \mathcal{F}) \, (\exists! x) \, (x \in A \cap X)$$
 
-Mediante l'insieme $X$, la teoria assicura la possibilità di "scegliere" esattamente un rappresentante per ciascun insieme della famiglia, anche qualora la famiglia sia infinita e non esista una formula esplicita o un algoritmo computazionale per operare tale selezione. L'assioma della scelta è invocato costantemente nei teoremi cardine dell'Analisi Matematica (come il Teorema di Hahn-Banach, l'esistenza di basi per spazi vettoriali a dimensione infinita e il Teorema di Tychonoff).
+Mediante l'insieme $X$, la teoria assicura la possibilità di "scegliere" esattamente un rappresentante per ciascun insieme della famiglia, anche qualora la famiglia sia infinita e non esista una formula esplicita o un algoritmo computazionale per operare tale selezione mediante una <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>funzione di scelta</b></font></mark>. L'assioma della scelta è invocato costantemente nei teoremi cardine dell'Analisi Matematica (come il Teorema di Hahn-Banach, l'esistenza di basi per spazi vettoriali a dimensione infinita e il Teorema di Tychonoff).
 
 > [!tip]- Flashcard: Assioma della Scelta
 > %%
