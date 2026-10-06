@@ -371,7 +371,7 @@ Definiamo ora la funzione fondamentale che scandisce la progressione discreta de
 Il <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>principio di induzione matematica</b></font></mark> è il motore dimostrativo sovrano per stabilire la validità universale di proprietà e formule sui numeri naturali. La sua formulazione insiemistica discende direttamente dalla definizione di $\mathbb{N}$ come minimo insieme induttivo \[[[Lezione 6 FdM.pdf#page=2|Dispensa p. 2]]].
 
 > [!danger] Teorema 5.1: Principio di Induzione (Formulazione per Sottoinsiemi)
-> Sia $A \subseteq \mathbb{N}$. Se valgono le due condizioni:
+> Sia $A \subseteq \mathbb{N}$. Se valgono le due condizioni del <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>principio di induzione per sottoinsiemi</b></font></mark>:
 > 1. $0 \in A$;
 > 2. $(\forall n \in \mathbb{N}) \; n \in A \implies n + 1 \in A$,
 > allora necessariamente:
@@ -413,16 +413,16 @@ END
 Nella pratica matematica, le proprietà da dimostrare non sono quasi mai enunciate come sottoinsiemi espliciti, bensì come formule o proprietà predicative dipendenti da un parametro naturale: $P(n)$ \[[[Lezione 6 FdM.pdf#page=3|Dispensa p. 3]]].
 
 > [!danger] Corollario 5.2: Principio di Induzione (Formulazione per Predicati)
-> Sia $P(n)$ una proprietà (predicato monadico aperto) definita per $n \in \mathbb{N}$. Se:
-> 1. **Base dell'Induzione:** $P(0)$ è vera;
-> 2. **Passo Induttivo:** $(\forall n \in \mathbb{N}) \; P(n) \implies P(n + 1)$,
+> Sia $P(n)$ una proprietà (predicato monadico aperto) definita per $n \in \mathbb{N}$. Secondo il <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>principio di induzione per predicati</b></font></mark>, se:
+> 1. <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Base dell'Induzione</b></font></mark>: $P(0)$ è vera;
+> 2. <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Passo Induttivo</b></font></mark>: $(\forall n \in \mathbb{N}) \; P(n) \implies P(n + 1)$,
 > allora la proprietà $P(n)$ è vera per ogni $n \in \mathbb{N}$.
 > - **Ipotesi:** $P(n)$ proposizione formalizzabile per ogni $n \in \mathbb{N}$.
 > - **Condizioni di validità:** Richiede la verifica autonoma della base e la dimostrazione formale dell'implicazione logica nel passo induttivo.
 > - **Significato dei simboli:**
 >   - $P(0)$: caso iniziale o ancoraggio.
->   - $P(n)$: ipotesi induttiva locale.
->   - $P(n+1)$: tesi induttiva locale.
+>   - $P(n)$: <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>ipotesi induttiva</b></font></mark> locale.
+>   - $P(n+1)$: <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>tesi induttiva</b></font></mark> locale.
 > - **Esempio operativo:** Dimostrare che la somma dei primi $n$ naturali positivi vale $\sum_{k=1}^n k = \frac{n(n+1)}{2}$.
 
 #### Dimostrazione del Corollario 5.2
@@ -465,13 +465,13 @@ La costruzione di $\mathbb{N}$ dentro $\mathbb{R}$ consente di derivare rigorosa
 > [!example] Proposizione 6.1: Proprietà Strutturali del Successore
 > Valgono le seguenti quattro proprietà:
 > 1. $\mathbb{N} \subset [0, +\infty)$ (tutti i numeri naturali sono non negativi);
-> 2. $\mathbb{N} = \{0\} \cup s(\mathbb{N})$, con $\{0\} \cap s(\mathbb{N}) = \emptyset$ (partizione tra zero e i numeri successori);
-> 3. La funzione successore $s : \mathbb{N} \to \mathbb{N}$ è iniettiva;
+> 2. $\mathbb{N} = \{0\} \cup s(\mathbb{N})$, con $\{0\} \cap s(\mathbb{N}) = \emptyset$ (<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>partizione tra zero e i numeri successori</b></font></mark>);
+> 3. L'<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>iniettività della funzione successore</b></font></mark> $s : \mathbb{N} \to \mathbb{N}$;
 > 4. $s(n) \ne 0$ per ogni $n \in \mathbb{N}$ (lo zero non è successore di alcun numero naturale).
 > - **Ipotesi:** $s(n) = n + 1$, $\mathbb{N}$ minimo insieme induttivo in $\mathbb{R}$.
 > - **Condizioni di validità:** Valide universalmente in $\mathbb{N}$.
 > - **Significato dei simboli:** Deduzione della catena di Peano e partizione dei naturali.
-> - **Esempio operativo:** La proprietà 2 garantisce che ogni numero naturale o è lo zero oppure ammette un predecessore naturale: se $n \in \mathbb{N} \setminus \{0\}$, esiste un unico $k \in \mathbb{N}$ tale che $n = k + 1$, cioè $n - 1 \in \mathbb{N}$.
+> - **Esempio operativo:** La proprietà 2 garantisce che ogni numero naturale o è lo zero oppure ammette un <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>predecessore naturale</b></font></mark>: se $n \in \mathbb{N} \setminus \{0\}$, esiste un unico $k \in \mathbb{N}$ tale che $n = k + 1$, cioè $n - 1 \in \mathbb{N}$.
 
 #### Dimostrazione della Proposizione 6.1
 1. **Dimostrazione del Punto 1 ($\mathbb{N} \subset [0, +\infty)$):**
@@ -524,10 +524,10 @@ END
 
 ### Gli Assiomi di Peano Dedotti come Teoremi in R
 
-Nel 1889 il matematico Giuseppe Peano formalizzò l'aritmetica mediante 5 postulati assiomatici per la terna $(\mathbb{N}, s, 0)$ \[[[Lezione 6 FdM.pdf#page=3|Dispensa p. 3]]].
+Nel 1889 il matematico <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Giuseppe Peano</b></font></mark> formalizzò l'aritmetica mediante 5 postulati assiomatici per la terna $(\mathbb{N}, s, 0)$ \[[[Lezione 6 FdM.pdf#page=3|Dispensa p. 3]]].
 
 > [!info] Osservazione 6.2: Il Sistema Assiomatico di Peano
-> Una terna $(\mathbb{N}, s, 0)$ è detta **sistema di Peano** se soddisfa:
+> Una terna $(\mathbb{N}, s, 0)$ è detta <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>sistema assiomatico di Peano</b></font></mark> se soddisfa:
 > 1. $0 \in \mathbb{N}$ (esiste un elemento distinto detto zero);
 > 2. $s : \mathbb{N} \to \mathbb{N}$ è un'applicazione ben definita da $\mathbb{N}$ in se stesso;
 > 3. $s$ è una funzione iniettiva: $(\forall n, m \in \mathbb{N}) \; s(n) = s(m) \implies n = m$;
@@ -558,11 +558,11 @@ Attraverso il principio di induzione dimostrato, è possibile estendere e conval
 > Siano $m, n \in \mathbb{N}$. Valgono le seguenti proprietà:
 > 1. $n = 0$ oppure $n \ge 1$ (gap unitario dallo zero);
 > 2. $n + 1 \ne n$ (nessun naturale è successore di se stesso);
-> 3. **Chiusura rispetto alla Somma:** $m + n \in \mathbb{N}$;
-> 4. **Chiusura rispetto al Prodotto:** $m \cdot n \in \mathbb{N}$;
-> 5. **Legame tra Ordine e Sottrazione:** $m \le n \iff n - m \in \mathbb{N}$;
-> 6. **Assenza di Intermedi Consecutivi:** Non esiste alcun $x \in \mathbb{N}$ tale che $m < x < m + 1$;
-> 7. **Proprietà di Discretezza dell'Ordine:** $m < n \implies m + 1 \le n$.
+> 3. <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Chiusura rispetto alla Somma</b></font></mark>: $m + n \in \mathbb{N}$;
+> 4. <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Chiusura rispetto al Prodotto</b></font></mark>: $m \cdot n \in \mathbb{N}$;
+> 5. <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Legame tra Ordine e Sottrazione</b></font></mark>: $m \le n \iff n - m \in \mathbb{N}$;
+> 6. <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Assenza di Intermedi Consecutivi</b></font></mark>: Non esiste alcun $x \in \mathbb{N}$ tale che $m < x < m + 1$;
+> 7. <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proprietà di Discretezza dell'Ordine</b></font></mark>: $m < n \implies m + 1 \le n$.
 > - **Ipotesi:** $m, n \in \mathbb{N}$, ordinamento indotto da $\mathbb{R}$.
 > - **Condizioni di validità:** Operazioni aritmetiche ristrette ai numeri naturali.
 > - **Significato dei simboli:**
