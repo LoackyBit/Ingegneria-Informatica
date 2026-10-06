@@ -88,13 +88,13 @@ Le operazioni insiemistiche associano o modificano collezioni di elementi all'in
 
 > [!danger] Definizione: Operazioni Insiemistiche Fondamentali
 > Siano $A$ e $B$ sottoinsiemi di uno spazio ambiente $\Omega$ ($A, B \subseteq \Omega$):
-> 1. **Unione ($A \cup B$):** raccoglie gli elementi che appartengono ad $A$, oppure a $B$, o a entrambi (disgiunzione inclusiva $\lor$):
+> 1. **<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Unione</b></font></mark> ($A \cup B$):** raccoglie gli elementi che appartengono ad $A$, oppure a $B$, o a entrambi (disgiunzione inclusiva $\lor$):
 >    $$A \cup B := \{x \in \Omega \mid x \in A \lor x \in B\}$$
-> 2. **Intersezione ($A \cap B$):** raccoglie esclusivamente gli elementi comuni condivisi simultaneamente sia da $A$ sia da $B$ (congiunzione logica $\land$):
+> 2. **<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Intersezione</b></font></mark> ($A \cap B$):** raccoglie esclusivamente gli elementi comuni condivisi simultaneamente sia da $A$ sia da $B$ (congiunzione logica $\land$):
 >    $$A \cap B := \{x \in \Omega \mid x \in A \land x \in B\}$$
-> 3. **Complementare ($A^\complement$ o $\complement_\Omega(A)$):** raccoglie tutti gli elementi dello spazio ambiente $\Omega$ che non appartengono ad $A$:
+> 3. **<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Complementare</b></font></mark> ($A^\complement$ o $\complement_\Omega(A)$):** raccoglie tutti gli elementi dello spazio ambiente $\Omega$ che non appartengono ad $A$:
 >    $$A^\complement := \{x \in \Omega \mid x \notin A\}$$
-> 4. **Differenza Insiemistica ($A \setminus B$ o $A - B$):** individua gli elementi che stanno in $A$ e non appartengono a $B$:
+> 4. **<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Differenza Insiemistica</b></font></mark> ($A \setminus B$ o $A - B$):** individua gli elementi che stanno in $A$ e non appartengono a $B$:
 >    $$A \setminus B := \{x \in \Omega \mid x \in A \land x \notin B\}$$
 
 > [!tip]- Flashcard: Operazioni Insiemistiche Fondamentali
