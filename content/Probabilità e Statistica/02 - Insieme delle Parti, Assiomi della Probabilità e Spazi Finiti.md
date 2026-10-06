@@ -509,7 +509,7 @@ Applicando la proprietà di additività finita:
 $$\mathbb{P}(E) = \sum_{\omega_i \in E} \mathbb{P}(\{\omega_i\})$$
 
 > [!danger] Teorema: Riduzione della Misura di Probabilità agli Eventi Elementari
-> Sia $(\Omega, 2^\Omega, \mathbb{P})$ uno spazio di probabilità finito con $\#\Omega = N$. Per determinare univocamente la probabilità di qualunque evento $E \in 2^\Omega$ è necessario e sufficiente assegnare la probabilità ai singoli eventi elementari:
+> Sia $(\Omega, 2^\Omega, \mathbb{P})$ uno spazio di probabilità finito con $\#\Omega = N$. Secondo il teorema di <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>riduzione agli eventi elementari</b></font></mark>, per determinare univocamente la probabilità di qualunque evento $E \in 2^\Omega$ è necessario e sufficiente assegnare la probabilità ai singoli eventi elementari:
 > $$p(\omega_i) \equiv p_i := \mathbb{P}(\{\omega_i\}), \quad i = 1, \dots, N$$
 > purché i pesi soddisfino le due condizioni di ammissibilità:
 > 1. **Non-negatività:** $p(\omega_i) \ge 0 \quad (\forall i = 1, \dots, N)$
@@ -548,7 +548,7 @@ $$\mathbb{P}(E) = 0.1 + 0.2 + 0.15 = 0.45$$
 
 ### Estensione agli Spazi Numerabili ("come" $\mathbb{N}$)
 
-Il docente conclude osservando che questa straordinaria semplificazione non si applica solo agli spazi finiti, ma rimane valida per qualsiasi spazio campionario **infinito numerabile** (ossia che può essere messo in corrispondenza biunivoca con l'insieme dei numeri naturali $\mathbb{N}$):
+Il docente conclude osservando che questa straordinaria semplificazione non si applica solo agli spazi finiti, ma rimane valida per qualsiasi <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>spazio campionario infinito numerabile</b></font></mark> (ossia che può essere messo in corrispondenza biunivoca con l'insieme dei numeri naturali $\mathbb{N}$):
 
 $$\Omega = \{\omega_1, \omega_2, \dots, \omega_j, \dots\}$$
 
