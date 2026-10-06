@@ -83,8 +83,8 @@ $$\text{Problema} \longrightarrow \text{Algoritmo} \longrightarrow \text{Program
 
 ### La Distinzione tra Algoritmo e Programma
 
-- **<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Algoritmo</b></font></mark>:** Procedimento di calcolo astratto, costituito da una sequenza finita, ordinata e deterministica di passi, che prescrive le operazioni necessarie per trasformare un insieme valido di dati di ingresso nei corrispondenti dati di uscita.
-- **<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Programma</b></font></mark>:** Realizzazione concreta e tangibile di un algoritmo, codificata mediante le regole sintattiche di un linguaggio di programmazione, direttamente o indirettamente eseguibile da un elaboratore.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Algoritmo</b></font></mark>: Procedimento di calcolo astratto, costituito da una sequenza finita, ordinata e deterministica di passi, che prescrive le operazioni necessarie per trasformare un insieme valido di dati di ingresso nei corrispondenti dati di uscita.
+- <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Programma</b></font></mark>: Realizzazione concreta e tangibile di un algoritmo, codificata mediante le regole sintattiche di un linguaggio di programmazione, direttamente o indirettamente eseguibile da un elaboratore.
 
 ![[Schema - Risoluzione di un Problema ed Elaborazione.png]]
 *(Flusso di risoluzione di un problema: rif. \[[[Introduzione alla Programmazione - Lezione 01 - Slide.pdf#page=34|Slide 34]]])*
@@ -93,9 +93,9 @@ $$\text{Problema} \longrightarrow \text{Algoritmo} \longrightarrow \text{Program
 
 Per essere considerato tale, un procedimento deve soddisfare congiuntamente tre proprietà formali \[[[Introduzione alla Programmazione - Lezione 01 - Slide.pdf#page=36|Slide 36]]]:
 
-1. **Non Ambiguità (Determinatezza):** Ciascuna operazione deve essere definita in modo univoco, escludendo ogni margine di interpretazione soggettiva. Frasi come "mescolare a sufficienza" sono prive di valore algoritmico; l'operazione deve essere parametrizzata con precisione oggettiva.
-2. **Eseguibilità (Effettività):** Ciascun singolo passo deve essere atomicamente realizzabile dall'esecutore meccanico con risorse e in tempi finiti.
-3. **Terminazione (Finitudine):** La computazione deve obbligatoriamente concludersi dopo un numero finito di operazioni per qualsiasi insieme ammesso di dati in ingresso. Un procedimento che incorra in un ciclo infinito senza fine non è un algoritmo corretto.
+1. <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Non Ambiguità (Determinatezza)</b></font></mark>: Ciascuna operazione deve essere definita in modo univoco, escludendo ogni margine di interpretazione soggettiva. Frasi come "mescolare a sufficienza" sono prive di valore algoritmico; l'operazione deve essere parametrizzata con precisione oggettiva.
+2. <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Eseguibilità (Effettività)</b></font></mark>: Ciascun singolo passo deve essere atomicamente realizzabile dall'esecutore meccanico con risorse e in tempi finiti.
+3. <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Terminazione (Finitudine)</b></font></mark>: La computazione deve obbligatoriamente concludersi dopo un numero finito di operazioni per qualsiasi insieme ammesso di dati in ingresso. Un procedimento che incorra in un ciclo infinito senza fine non è un algoritmo corretto.
 
 > [!tip]- Flashcard: Proprietà Fondative dell'Algoritmo
 %%
@@ -202,7 +202,7 @@ END
 
 ## Architettura dei Calcolatori: Il Modello di von Neumann
 
-La quasi totalità dei calcolatori elettronici per uso generale adotta l'architettura concettuale teorizzata da John von Neumann nel 1945 \[[[Introduzione alla Programmazione - Lezione 01 - Slide.pdf#page=10|Slide 10]]]. Il principio fondativo è il **programma memorizzato**: i dati numerici e le istruzioni esecutive del programma risiedono all'interno del medesimo supporto di memorizzazione (la memoria centrale) e condividono la medesima codifica binaria.
+La quasi totalità dei calcolatori elettronici per uso generale adotta l'<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>architettura di von Neumann</b></font></mark>, teorizzata dal matematico ungherese <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>John von Neumann</b></font></mark> nel 1945 \[[[Introduzione alla Programmazione - Lezione 01 - Slide.pdf#page=10|Slide 10]]]. Il principio fondativo è il <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>programma memorizzato</b></font></mark>: i dati numerici e le istruzioni esecutive del programma risiedono all'interno del medesimo supporto di memorizzazione (la memoria centrale) e condividono la medesima codifica binaria.
 
 ### Componenti Principali dell'Architettura
 
@@ -256,7 +256,7 @@ END
 I processori comprendono esclusivamente il <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>linguaggio macchina</b></font></mark>, costituito da sequenze binarie codificate dipendenti dalla specifica architettura della CPU \[[[Introduzione alla Programmazione - Lezione 01 - Slide.pdf#page=42|Slide 42]]]. I linguaggi ad alto livello orientati alla leggibilità umana richiedono un processo di traduzione, articolato storicamente in due approcci:
 
 ### 1. Compilatore \[[[Introduzione alla Programmazione - Lezione 01 - Slide.pdf#page=44|Slide 44-45]]]
-Il compilatore esamina il programma sorgente nella sua totalità e genera un file eseguibile binario autonomo, collegando il programma tradotto con le librerie esterne mediante la fase di *linking*.
+Il <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>compilatore</b></font></mark> esamina il programma sorgente nella sua totalità e genera un file eseguibile binario autonomo, collegando il programma tradotto con le librerie esterne mediante la fase di *linking*.
 
 ![[Schema - Il Processo di Compilazione.png]]
 *(Fasi del processo di compilazione: sorgente, traduttore, linker ed eseguibile: rif. \[[[Introduzione alla Programmazione - Lezione 01 - Slide.pdf#page=45|Slide 45]]])*
@@ -265,7 +265,7 @@ Il compilatore esamina il programma sorgente nella sua totalità e genera un fil
 - **Svantaggi:** Assenza di portabilità diretta (il binario prodotto è vincolato all'architettura hardware e al sistema operativo su cui è stato compilato).
 
 ### 2. Interprete
-L'interprete legge il codice sorgente riga per riga, traducendo ed eseguendo ciascuna istruzione al volo durante il ciclo runtime.
+L'<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>interprete</b></font></mark> legge il codice sorgente riga per riga, traducendo ed eseguendo ciascuna istruzione al volo durante il ciclo runtime.
 - **Vantaggi:** Massima portabilità e flessibilità nello sviluppo interattivo.
 - **Svantaggi:** Marcato rallentamento prestazionale dovuto alla continua decodifica delle istruzioni.
 
