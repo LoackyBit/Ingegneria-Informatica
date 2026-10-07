@@ -576,7 +576,7 @@ La sicurezza dei sistemi informatici moderni e della <mark style="background:rgb
 ### 2. Tomografia ad Impedenza Elettrica (EIT) e Geofisica
 
 Nel mondo dell'ingegneria biomedica (con la <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>tomografia ad impedenza elettrica (EIT)</b></font></mark>) e della modellistica fisica differenziale:
-- **Problema Diretto (<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Equazioni di Maxwell</b></font></mark>):** Data la conducibilità elettrica interna $\sigma$ dei tessuti cerebrali all'interno del cranio $\Omega$, le equazioni della fisica determinano in modo univoco il potenziale elettrico $u$ misurabile sul contorno $\Gamma$ (lo scalpo del paziente).
+- **Problema Diretto** (<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Equazioni di Maxwell</b></font></mark>): Data la conducibilità elettrica interna $\sigma$ dei tessuti cerebrali all'interno del cranio $\Omega$, le equazioni della fisica determinano in modo univoco il potenziale elettrico $u$ misurabile sul contorno $\Gamma$ (lo scalpo del paziente).
 - **Problema Inverso (Diagnostica):** Il medico non può sezionare la testa del paziente vivo: posiziona elettrodi sullo scalpo, misura il potenziale $u$ sul bordo $\Gamma$ e desidera invertire la mappa per ricostruire la mappa di conducibilità interna $\sigma(x, y, z)$ e individuare emorragie o tumori.
 - Analoghi problemi inversi governano la Magnetoencefalografia (MEG), la Risonanza Magnetica (RMN) e la geofisica (misura delle anomalie magnetiche ed elastiche da elicotteri o satelliti per localizzare faglie o prevedere sismi).
 - In tutti questi problemi ingegneristici, l'operatore inverso spesso **non è continuo** o è <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>mal posto</b></font></mark> nel senso di Hadamard: piccolissime perturbazioni sul dato misurato $y$ producono divergenze catastrofiche sulla stima della causa $x$, richiedendo sofisticate tecniche di regolarizzazione numerica.
@@ -604,7 +604,7 @@ In chiusura di lezione, il docente richiama l'attenzione su una pericolosa <mark
    - Ad ogni singolo elemento $y \in B$ associa l'unico elemento $x \in A$ tale che $f(x) = y$.
    - **Condizione di esistenza:** Esiste **esclusivamente** se la funzione $f$ è biettiva (o iniettiva se ristretta all'immagine).
 
-2. **$f^{-1}$ come** <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>controimmagine</b></font></mark> **(o preimmagine):**
+2. **$f^{-1}$ come** <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>controimmagine</b></font></mark> (o preimmagine):
    - È un'operazione definita tra i <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>sottoinsiemi</b></font></mark> degli insiemi (tra gli <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>insiemi delle parti</b></font></mark>): $f^{-1}: \mathcal{P}(B) \to \mathcal{P}(A)$.
    - Ad ogni sottoinsieme $Y \subseteq B$ associa il sottoinsieme delle sue controimmagini:
      $$f^{-1}(Y) = \{x \in A \mid f(x) \in Y\}$$
