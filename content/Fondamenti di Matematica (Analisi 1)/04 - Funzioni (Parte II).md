@@ -73,7 +73,7 @@ END
 
 ### Distinzione tra Funzione e Formula Analitica
 
-Il docente sottolinea un errore concettuale frequentissimo: **confondere una funzione con la** <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>formula analitica</b></font></mark> **che la descrive**. Una formula non è una funzione se non ne vengono esplicitati il dominio e il codominio. Inoltre, il fatto che due funzioni assumano lo stesso valore in uno o più punti non è assolutamente sufficiente a garantirne l'uguaglianza.
+Il docente sottolinea un errore concettuale frequentissimo: confondere una funzione con la <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>formula analitica</b></font></mark> che la descrive. Una formula non è una funzione se non ne vengono esplicitati il dominio e il codominio. Inoltre, il fatto che due funzioni assumano lo stesso valore in uno o più punti non è assolutamente sufficiente a garantirne l'uguaglianza.
 
 - **Controesempio del Docente:**
   Consideriamo le funzioni $f, g: \mathbb{R} \to \mathbb{R}$ definite rispettivamente da:
@@ -154,12 +154,12 @@ In termini di problemi inversi, la suriettività è una pura <mark style="backgr
 
 #### Il Ruolo Chiave della Scelta del Codominio
 
-Come evidenziato dal docente a lezione, l'essere suriettiva non è una proprietà intrinseca della sola legge di assegnazione, ma **dipende criticamente dalla** <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>scelta del codominio</b></font></mark> **$B$** \[[[Lezione 4 FdM.pdf#page=2|Dispensa p. 2]]]:
+Come evidenziato dal docente a lezione, l'essere suriettiva non è una proprietà intrinseca della sola legge di assegnazione, ma dipende criticamente dalla <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>scelta del codominio</b></font></mark> $B$ \[[[Lezione 4 FdM.pdf#page=2|Dispensa p. 2]]]:
 - Consideriamo la funzione esponenziale $x \mapsto e^x$:
   - Se considerata come $f: \mathbb{R} \to (0, +\infty)$, essa è **suriettiva**, poiché ogni numero reale strettamente positivo $y > 0$ si può esprimere come $e^x$, con $x = \ln y$.
   - Se invece la stessa espressione analitica viene considerata come $f: \mathbb{R} \to \mathbb{R}$, la funzione **non è suriettiva**: tutti i numeri negativi e lo zero ($y \le 0$) restano privi di controimmagine ("orfani di frecce").
 
-- **Esempio Discreto e** <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Principio dei Cassetti</b></font></mark>:
+- Esempio Discreto e <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Principio dei Cassetti</b></font></mark>:
   Se $A$ è un insieme finito di 2 elementi e $B$ un insieme di 3 elementi, non può esistere alcuna funzione suriettiva $f: A \to B$. Poiché da ciascuno dei 2 elementi di $A$ può partire una e una sola freccia (per definizione di funzione), al massimo 2 elementi di $B$ possono essere raggiunti, lasciando almeno un elemento di $B$ scoperto.
 
 > [!tip]- Flashcard: Definizione di Funzione Suriettiva
@@ -599,12 +599,12 @@ END
 
 In chiusura di lezione, il docente richiama l'attenzione su una pericolosa <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>sovrapposizione notazionale</b></font></mark> universale nella letteratura matematica: il simbolo $f^{-1}$ viene impiegato per denotare due concetti profondamente distinti \[[[Lezione 4 FdM.pdf#page=5|Dispensa p. 5]]]:
 
-1. **$f^{-1}$ come** <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>funzione inversa</b></font></mark>:
+1. $f^{-1}$ come <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>funzione inversa</b></font></mark>:
    - È una funzione definita tra gli <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>elementi</b></font></mark> degli insiemi: $f^{-1}: B \to A$.
    - Ad ogni singolo elemento $y \in B$ associa l'unico elemento $x \in A$ tale che $f(x) = y$.
    - **Condizione di esistenza:** Esiste **esclusivamente** se la funzione $f$ è biettiva (o iniettiva se ristretta all'immagine).
 
-2. **$f^{-1}$ come** <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>controimmagine</b></font></mark> (o preimmagine):
+2. $f^{-1}$ come <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>controimmagine</b></font></mark> (o preimmagine):
    - È un'operazione definita tra i <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>sottoinsiemi</b></font></mark> degli insiemi (tra gli <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>insiemi delle parti</b></font></mark>): $f^{-1}: \mathcal{P}(B) \to \mathcal{P}(A)$.
    - Ad ogni sottoinsieme $Y \subseteq B$ associa il sottoinsieme delle sue controimmagini:
      $$f^{-1}(Y) = \{x \in A \mid f(x) \in Y\}$$
