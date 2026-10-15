@@ -1,14 +1,9 @@
 @use "./base.scss";
+@use "./obsidian-fonts.scss";
 
 // ==========================================
 // Cupertino / macOS Style (Inspired by Obsidian Cupertino Theme)
 // ==========================================
-
-:root {
-  --headerFont: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", sans-serif;
-  --bodyFont: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", sans-serif;
-  --codeFont: "JetBrains Mono", "SF Mono", Menlo, Monaco, Consolas, monospace;
-}
 
 // 1. Tipografia e Titoli
 h1, h2, h3, h4, h5, h6 {

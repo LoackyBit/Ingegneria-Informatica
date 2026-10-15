@@ -62,6 +62,19 @@ export async function getSatoriFonts(headerFont: FontSpecification, bodyFont: Fo
     ...bodyFonts.filter((font): font is NonNullable<typeof font> => font !== null),
   ]
 
+  // Fallback se i font configurati sono locali (es. Arial) e non presenti su Google Fonts
+  if (fonts.length === 0) {
+    const fallbackData = await fetchTtf("Inter", 400)
+    if (fallbackData) {
+      fonts.push({
+        name: "Inter",
+        data: fallbackData,
+        weight: 400,
+        style: "normal" as const,
+      })
+    }
+  }
+
   return fonts
 }
 
@@ -99,12 +112,14 @@ export async function fetchTtf(
   const match = urlRegex.exec(css)
 
   if (!match) {
-    console.log(
-      styleText(
-        "yellow",
-        `\nWarning: Failed to fetch font ${rawFontName} with weight ${weight}, got ${cssResponse.statusText}`,
-      ),
-    )
+    if (cssResponse.status !== 400) {
+      console.log(
+        styleText(
+          "yellow",
+          `\nWarning: Failed to fetch font ${rawFontName} with weight ${weight}, got ${cssResponse.statusText}`,
+        ),
+      )
+    }
     return
   }
 

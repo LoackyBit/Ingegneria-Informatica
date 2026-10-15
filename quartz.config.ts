@@ -1,5 +1,8 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import { syncFonts } from "./sync-fonts.mjs"
+
+const obsidianFonts = syncFonts()
 
 /**
  * Quartz 4 Configuration
@@ -20,12 +23,12 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "googleFonts",
+      fontOrigin: "local",
       cdnCaching: true,
       typography: {
-        header: "Inter",
-        body: "Inter",
-        code: "JetBrains Mono",
+        header: obsidianFonts.interfaceFont,
+        body: obsidianFonts.interfaceFont,
+        code: obsidianFonts.monoFont,
       },
       colors: {
         lightMode: {

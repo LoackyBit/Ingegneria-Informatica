@@ -27,6 +27,10 @@ sed -i '' 's/title: "Ingegneria Informatica 2026 - 27 MOC"/title: "Ingegneria In
 # 4. Copia tutti gli schemi e grafici (immagini) in attachments
 find "$VAULT_DIR/99 - Meta/Attachments" -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.webp" \) -exec cp {} "$CONTENT_DIR/attachments/" \;
 
+# 5. Sincronizzazione impostazioni aspetto e font da Obsidian
+echo "🎨 Sincronizzazione font da Obsidian..."
+node "$REPO_DIR/sync-fonts.mjs"
+
 # Rimuovi file .DS_Store se presenti
 find "$CONTENT_DIR" -name ".DS_Store" -delete
 

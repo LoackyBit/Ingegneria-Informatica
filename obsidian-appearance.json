@@ -1,0 +1,24 @@
+{
+  "cssTheme": "Cupertino",
+  "interfaceFontFamily": "Arial",
+  "textFontFamily": "NewComputerModern Math",
+  "monospaceFontFamily": "JetBrains Mono,FiraCode Nerd Font Mono",
+  "accentColor": "#007ecc",
+  "enabledCssSnippets": [
+    "Daily Note Themes",
+    "Notebook Backgrounds",
+    "cornell",
+    "Colored Sidebar Items",
+    "Extended Color Schemes",
+    "pacrar",
+    "compact-mermaid",
+    "study-ergonomics"
+  ],
+  "theme": "system",
+  "translucency": false,
+  "showViewHeader": true,
+  "showRibbon": true,
+  "nativeMenus": true,
+  "baseFontSize": 18,
+  "baseFontSizeAction": true
+}

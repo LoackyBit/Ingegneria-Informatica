@@ -6,7 +6,7 @@
     <string>com.loacky.ingegneria-autodeploy</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/usr/bin/python3</string>
+        <string>/Library/Frameworks/Python.framework/Versions/3.13/bin/python3</string>
         <string>/Users/lorenzo/Documents/Ingegneria-Informatica/autodeploy.py</string>
     </array>
     <key>RunAtLoad</key>

@@ -30,6 +30,7 @@ WATCH_FILES = [
     VAULT_ROOT / "01 - Map of Content/Fondamenti di Matematica (Analisi 1) MOC.md",
     VAULT_ROOT / "01 - Map of Content/Introduzione alla Programmazione MOC.md",
     VAULT_ROOT / "01 - Map of Content/Probabilità e Statistica MOC.md",
+    VAULT_ROOT / ".obsidian/appearance.json",
 ]
 
 def log(msg: str):
