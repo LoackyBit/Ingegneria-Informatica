@@ -382,7 +382,7 @@ END
 
 Il culmine teorico della lezione è la caratterizzazione delle funzioni invertibili \[[[Lezione 4 FdM.pdf#page=4|Dispensa p. 4]]].
 
-> [!example] Teorema 1.10: <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema di Invertibilità</b></font></mark>
+> [!danger] Teorema 1.10: <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema di Invertibilità</b></font></mark>
 > $$f \text{ è biettiva} \iff \exists!\, g: B \to A \quad\text{tale che}\quad (g \circ f = i_A) \;\land\; (f \circ g = i_B)$$
 > 
 > - **Ipotesi:** $f: A \to B$ è una funzione assegnata tra gli insiemi $A$ e $B$.
@@ -529,7 +529,7 @@ END
 2. <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Inversa della Composizione</b></font></mark>:
    Se due funzioni sono biettive, la loro composizione è biettiva e l'inversa <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>inverte l'ordine dei fattori</b></font></mark> \[[[Lezione 4 FdM.pdf#page=6|Dispensa p. 6]]]:
 
-> [!summary] Teorema 1.15: <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Inversa della Composizione</b></font></mark>
+> [!danger] Teorema 1.15: <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Inversa della Composizione</b></font></mark>
 > Siano $f: A \to B$ e $g: B \to C$ due funzioni biettive. Allora $g \circ f: A \to C$ è biettiva e la sua inversa è:
 > $$(g \circ f)^{-1} = f^{-1} \circ g^{-1}$$
 
@@ -540,7 +540,7 @@ $$(g \circ f) \circ (f^{-1} \circ g^{-1}) = g \circ (f \circ f^{-1}) \circ g^{-1
 Per l'unicità dell'inversa, $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$. $\blacksquare$
 *(Metafora intuitiva: l'azione di indossare prima le calze $f$ e poi le scarpe $g$ si inverte togliendo prima le scarpe $g^{-1}$ e poi le calze $f^{-1}$).*
 
-> [!info] Definizione 1.16: <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Invertibilità per Funzioni Iniettive</b></font></mark>
+> [!danger] Definizione 1.16: <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Invertibilità per Funzioni Iniettive</b></font></mark>
 > Spesso in analisi una funzione $f: A \to B$ è iniettiva ma non suriettiva sul codominio $B$. Tuttavia, $f$ è banalmente biettiva se ristretta alla propria immagine $f(A) \subseteq B$.
 > Si definisce allora la <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>funzione inversa ristretta</b></font></mark> \[[[Lezione 4 FdM.pdf#page=7|Dispensa p. 7]]]:
 > $$f^{-1}: f(A) \to A, \qquad \forall y \in f(A): f^{-1}(y) = x \quad\text{con } f(x) = y$$

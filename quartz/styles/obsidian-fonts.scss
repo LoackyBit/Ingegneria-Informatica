@@ -57,7 +57,7 @@
 
 :root {
   --obsidian-interface-font: "Arial", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --obsidian-text-font: "NewComputerModern Math", "Computer Modern", Georgia, serif;
+  --obsidian-text-font: "New York Small", "Computer Modern", Georgia, serif;
   --obsidian-mono-font: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 
   // Variabili Quartz
@@ -85,7 +85,7 @@ button {
   font-family: var(--obsidian-interface-font);
 }
 
-// 2. Testi degli articoli e delle note (Text font da Obsidian: NewComputerModern Math)
+// 2. Testi degli articoli e delle note (Text font da Obsidian: New York Small)
 article,
 .popover-inner {
   font-family: var(--obsidian-text-font);

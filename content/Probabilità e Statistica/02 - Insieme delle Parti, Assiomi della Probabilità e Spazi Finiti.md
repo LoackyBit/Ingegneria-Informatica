@@ -64,7 +64,7 @@ Il docente precisa che in ambito matematico si preferisce l'espressione "collezi
 
 Per comprendere il motivo profondo per cui l'insieme delle parti viene denotato con il simbolo esponenziale $2^A$, consideriamo un sottoinsieme arbitrario $B \subseteq A$. Esiste un modo canonico e univoco di descrivere l'appartenenza a $B$ attraverso una funzione a valori nell'insieme binario $\{0, 1\}$.
 
-> [!info] Definizione: Funzione Indicatrice (o Caratteristica)
+> [!danger] Definizione: Funzione Indicatrice (o Caratteristica)
 > Sia $A$ un insieme e sia $B \subseteq A$. Si definisce <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>funzione indicatrice</b></font></mark> (o *funzione caratteristica*, denotata con $f_B$ o $\mathbf{1}_B$) l'applicazione $f_B: A \to \{0, 1\}$ definita puntualmente da:
 > $$f_B(a) := \begin{cases} 1 & \text{se } a \in B \\ 0 & \text{se } a \notin B \end{cases}$$
 > 

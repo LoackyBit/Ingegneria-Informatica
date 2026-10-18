@@ -38,7 +38,7 @@ $$\sup\{x, y\} = \max\{x, y\}, \qquad \inf\{x, y\} = \min\{x, y\}$$
 
 Sfruttando questa struttura reticolare, è possibile definire in modo univoco le componenti dimensionali di un numero reale rispetto all'origine $0$.
 
-> [!info] Definizione 1.1: Valore Assoluto, Parte Positiva e Parte Negativa
+> [!danger] Definizione 1.1: Valore Assoluto, Parte Positiva e Parte Negativa
 > Per ogni $x \in \mathbb{R}$, si definiscono:
 > $$|x| = \max\{x, -x\}$$
 > $$x^+ = \max\{x, 0\}$$
@@ -68,7 +68,7 @@ END
 
 Le tre grandezze introdotte godono di relazioni algebriche fondamentali che permettono di scomporre qualsiasi numero reale nella differenza delle sue componenti semidefinite positive \[[[Lezione 6 FdM.pdf#page=1|Dispensa p. 1]]].
 
-> [!example] Proposizione 1.2: Proprietà delle Componenti e Formule di Decomposizione
+> [!summary] Proposizione 1.2: Proprietà delle Componenti e Formule di Decomposizione
 > Per ogni $x \in \mathbb{R}$, le grandezze $|x|$, $x^+$ e $x^-$ sono non negative e soddisfano le identità:
 > $$x = x^+ - x^-, \qquad |x| = x^+ + x^-$$
 > - **Ipotesi:** $x \in \mathbb{R}$.
@@ -113,7 +113,7 @@ END
 
 Il valore assoluto soddisfa un insieme di proposizioni algebriche e topologiche che ne fanno la funzione generatrice della distanza metrica euclidea standard $d(x, y) = |x - y|$ su $\mathbb{R}$ \[[[Lezione 6 FdM.pdf#page=1|Dispensa p. 1]]].
 
-> [!example] Proposizione 1.3: Proprietà Fondamentali del Valore Assoluto
+> [!summary] Proposizione 1.3: Proprietà Fondamentali del Valore Assoluto
 > Siano $x, y \in \mathbb{R}$ e sia $a \ge 0$. Valgono le seguenti proprietà:
 > 1. **Annullamento ed Invarianza dell'Opposto:** $|x| = 0 \iff x = 0$, e $|-x| = |x|$
 > 2. **Limitazione Bilaterale:** $-|x| \le x \le |x|$
@@ -243,7 +243,7 @@ $$\exists M \in \mathbb{R} : (\forall x \in A) \; x \le M \quad \land \quad \exi
 
 Grazie alla Proposizione 1.3, questa doppia condizione può essere sintetizzata in un'unica disuguaglianza scalare mediante il modulo \[[[Lezione 6 FdM.pdf#page=2|Dispensa p. 2]]].
 
-> [!example] Teorema 3.1: Caratterizzazione degli Insiemi Limitati tramite Modulo
+> [!danger] Teorema 3.1: Caratterizzazione degli Insiemi Limitati tramite Modulo
 > Un sottoinsieme non vuoto $A \subseteq \mathbb{R}$ è limitato se e solo se esiste una costante $C \ge 0$ tale che:
 > $$(\forall x \in A) \quad |x| \le C$$
 > - **Ipotesi:** $A \subseteq \mathbb{R}$, $A \ne \emptyset$.
@@ -288,7 +288,7 @@ Questa dinamica riflette la metafora dell'effetto domino:
 1. La prima tessera cade (lo zero appartiene all'insieme);
 2. Se cade una qualsiasi tessera $x$, la sua caduta provoca necessariamente la caduta della tessera contigua $x+1$.
 
-> [!info] Definizione 4.1: Sottoinsieme Induttivo di R
+> [!danger] Definizione 4.1: Sottoinsieme Induttivo di R
 > Un sottoinsieme $A \subseteq \mathbb{R}$ si dice <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>induttivo</b></font></mark> se soddisfa le due condizioni:
 > 1. $0 \in A$;
 > 2. $(\forall x \in \mathbb{R}) \; x \in A \implies x + 1 \in A$.
@@ -357,7 +357,7 @@ END
 
 Definiamo ora la funzione fondamentale che scandisce la progressione discreta dei naturali \[[[Lezione 6 FdM.pdf#page=2|Dispensa p. 2]]].
 
-> [!info] Definizione 4.3: Funzione Successore
+> [!danger] Definizione 4.3: Funzione Successore
 > La funzione
 > $$s : \mathbb{N} \to \mathbb{N}, \qquad s(n) = n + 1$$
 > è detta <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>funzione successore</b></font></mark>.
@@ -462,7 +462,7 @@ END
 
 La costruzione di $\mathbb{N}$ dentro $\mathbb{R}$ consente di derivare rigorosamente le proprietà topologiche e cardinali della successione dei naturali \[[[Lezione 6 FdM.pdf#page=3|Dispensa p. 3]]].
 
-> [!example] Proposizione 6.1: Proprietà Strutturali del Successore
+> [!summary] Proposizione 6.1: Proprietà Strutturali del Successore
 > Valgono le seguenti quattro proprietà:
 > 1. $\mathbb{N} \subset [0, +\infty)$ (tutti i numeri naturali sono non negativi);
 > 2. $\mathbb{N} = \{0\} \cup s(\mathbb{N})$, con $\{0\} \cap s(\mathbb{N}) = \emptyset$ (<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>partizione tra zero e i numeri successori</b></font></mark>);
@@ -554,7 +554,7 @@ END
 
 Attraverso il principio di induzione dimostrato, è possibile estendere e convalidare tutte le proprietà aritmetiche interne e comprendere la topologia dell'ordine di $\mathbb{N}$ \[[[Lezione 6 FdM.pdf#page=3|Dispensa p. 3]]].
 
-> [!example] Proposizione 7.1: Proprietà Aritmetiche e Discretezza dell'Ordine
+> [!summary] Proposizione 7.1: Proprietà Aritmetiche e Discretezza dell'Ordine
 > Siano $m, n \in \mathbb{N}$. Valgono le seguenti proprietà:
 > 1. $n = 0$ oppure $n \ge 1$ (gap unitario dallo zero);
 > 2. $n + 1 \ne n$ (nessun naturale è successore di se stesso);

@@ -108,7 +108,7 @@ Questo assioma prescrive che due insiemi sono uguali se e solo se hanno gli stes
 
 Mentre l'assioma di estensionalità descrive la relazione tra insiemi, non garantisce l'esistenza di alcun oggetto nel discorso. L'<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>assioma dell'insieme vuoto</b></font></mark> assicura l'esistenza del primo ente matematico concreto \[[[Lezione 2 FdM.pdf#page=2|Dispensa p. 2]]].
 
-> [!error] Assioma 2: Assioma dell'Insieme Vuoto
+> [!danger] Assioma 2: Assioma dell'Insieme Vuoto
 > Esiste (ed è unico) l'insieme che non possiede elementi. Tale insieme si chiama <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>insieme vuoto</b></font></mark> e si denota con $\emptyset$:
 > $$(\forall x) \, (x \notin \emptyset)$$
 

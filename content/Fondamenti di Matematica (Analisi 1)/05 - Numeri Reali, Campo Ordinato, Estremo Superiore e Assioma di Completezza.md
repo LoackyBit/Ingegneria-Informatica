@@ -516,7 +516,7 @@ END
 
 Operativamente, non si calcola l'estremo superiore determinando l'intero insieme dei maggioranti e cercandone il minimo. Si impiega invece il <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>teorema di caratterizzazione</b></font></mark> \[[[Lezione 5 FdM.pdf#page=7|Dispensa p. 7]]].
 
-> [!summary] Proposizione 4.14: Teorema di Caratterizzazione dell'Estremo Superiore
+> [!danger] Proposizione 4.14: Teorema di Caratterizzazione dell'Estremo Superiore
 > Sia $\emptyset \neq A \subset \mathbb{R}$ un insieme limitato superiormente e sia $s \in \mathbb{R}$.
 > Allora $s = \sup A$ se e solo se sono verificate simultaneamente le due condizioni:
 > 1. $s$ è un maggiorante di $A$:
@@ -546,7 +546,7 @@ In Analisi Matematica, ponendo $t = s - \varepsilon$ (con $\varepsilon > 0$), la
 > - **Estremo Inferiore:**
 >   $$i = \inf B \iff \begin{cases} 1) \; (\forall b \in B) \; i \le b & \text{($i$ è un minorante)} \\ 2) \; (\forall \varepsilon > 0)(\exists\, b \in B) \; b < i + \varepsilon & \text{(se si sale di $\varepsilon$, si "pesca" un punto di $B$)} \end{cases}$$
 
-> [!note] Intuizione Geometrica dell'Intervallo $[s - \varepsilon, s]$
+> [!info] Intuizione Geometrica dell'Intervallo $[s - \varepsilon, s]$
 > Sulla retta reale, comunque si fissi un intorno sinistro di ampiezza $\varepsilon > 0$ dell'estremo superiore $s$, cadrà sempre all'interno dell'intervallo $(s - \varepsilon, s]$ almeno un elemento $a \in A$. Non vi è alcuno "spazio vuoto" tra gli elementi dell'insieme e il loro estremo superiore.
 
 > [!tip]- Flashcard: Teorema di Caratterizzazione dell'Estremo Superiore
