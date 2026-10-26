@@ -7,7 +7,7 @@ aliases: ["Ingegneria Informatica 2026-27 MOC", "Ingegneria Informatica 2026 - 2
 source: original
 title: "Ingegneria Informatica 2026/27"
 date: '2026-09-25'
-updated: 2026-10-06T08:24
+updated: 2026-10-26T18:25
 tags: [education/university, education/moc, tech/engineering, tech/cs]
 summary: "Hub generale e matrice PACRAR per la Laurea Triennale in Ingegneria Informatica 2026-27 (Sapienza Università di Roma, 1° Anno, 1° Semestre)."
 ---
@@ -48,6 +48,8 @@ La preparazione accademica segue il framework metodologico PACRAR (*Pianificazio
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
 | [[01 - Logica Proposizionale, Predicati e Metodi di Dimostrazione]] | [x] | [x] | [-] | [ ] | [ ] | [ ] | Connettivi, quantificatori, tautologie e metodi di dimostrazione |
 | [[02 - Teoria degli Insiemi]] | [x] | [x] | [-] | [ ] | [ ] | [ ] | Assiomi ZF, estensionalità, unione, specificazione, potenza, Von Neumann |
+| [[03 - Funzioni (Parte I)]] | [x] | [x] | [-] | [ ] | [ ] | [ ] | Coppie ordinate di Kuratowski, relazioni binarie e funzioni come terne |
+| [[04 - Funzioni (Parte II)]] | [x] | [x] | [-] | [ ] | [ ] | [ ] | Iniettività, suriettività, composizione e teorema di invertibilità |
 
 ### 2. Introduzione alla Programmazione — 9 CFU
 *Hub dedicato:* [[Introduzione alla Programmazione MOC]]
@@ -62,6 +64,8 @@ La preparazione accademica segue il framework metodologico PACRAR (*Pianificazio
 | Lezione / Argomento | P | A | C | R | A | R | Stato / Sintesi |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
 | [[01 - Teoria degli Insiemi, Spazio Campionario e Prime Nozioni di Probabilità]] | [x] | [x] | [x] | [x] | [ ] | [ ] | Spazio campionario $\Omega$, algebra degli eventi, Eulero-Venn e cardinalità |
+| [[02 - Insieme delle Parti, Assiomi della Probabilità e Spazi Finiti]] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |  |
+| [[15 - Variabili di Bernoulli, Binomiali, Ipergeometriche ed Esempi di Valore Atteso]] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |  |
 
 ---
 

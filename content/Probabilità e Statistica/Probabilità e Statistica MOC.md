@@ -2,12 +2,12 @@
 status: permanent
 type: moc
 area: education
-related: ["[[University]]", "[[Ingegneria Informatica 2026 - 27 MOC]]", "[[Corsi]]", "[[Metodo di Studio - PACRAR]]", "[[01 - Teoria degli Insiemi, Spazio Campionario e Prime Nozioni di Probabilità]]"]
+related: ["[[University]]", "[[Ingegneria Informatica 2026 - 27 MOC]]", "[[Corsi]]", "[[Metodo di Studio - PACRAR]]", "[[01 - Teoria degli Insiemi, Spazio Campionario e Prime Nozioni di Probabilità]]", "[[13 - Variabili Aleatorie Discrete, Densità di Probabilità, Valore Atteso e Distribuzione Geometrica]]"]
 aliases: ["Probabilità e Statistica MOC", "Elementi di Calcolo delle Probabilità e Statistica MOC", "Statistica e Probabilità MOC", "PeS MOC"]
 source: original
 title: "Probabilità e Statistica MOC"
 date: '2026-09-24'
-updated: 2026-09-27T18:00
+updated: 2026-10-26T18:25
 tags: [education/university, education/moc, math/probability, math/statistics]
 summary: "Hub del corso universitario di Elementi di Calcolo delle Probabilità e Statistica per Ingegneria Informatica, con scheda insegnamento e matrice PACRAR."
 ---
@@ -43,6 +43,9 @@ summary: "Hub del corso universitario di Elementi di Calcolo delle Probabilità 
 | Argomento | P | A | C | R | A | R | Sintesi |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
 | [[01 - Teoria degli Insiemi, Spazio Campionario e Prime Nozioni di Probabilità]] | [x] | [x] | [x] | [x] | [ ] | [ ] | Spazio campionario $\Omega$, algebra degli eventi, Eulero-Venn e cardinalità |
+| [[02 - Insieme delle Parti, Assiomi della Probabilità e Spazi Finiti]] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | Assiomi di Kolmogorov, continuità della probabilità e spazi finiti equiprobabili |
+| [[13 - Variabili Aleatorie Discrete, Densità di Probabilità, Valore Atteso e Distribuzione Geometrica]] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | Variabili discrete, densità PMF, indicatrici di Bernoulli, valore atteso lineare e distribuzione geometrica |
+| [[15 - Variabili di Bernoulli, Binomiali, Ipergeometriche ed Esempi di Valore Atteso]] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | Modelli di Bernoulli, binomiale, ipergeometrica senza reinserimento ed equità del gioco |
 
 ## Formulari & Risorse Chiave
 - [[01 - Teoria degli Insiemi, Spazio Campionario e Prime Nozioni di Probabilità]] — Notazione insiemistica, operazioni booleane, spazio campionario $\Omega$, eventi elementari e composti, combinatoria e cardinalità.
