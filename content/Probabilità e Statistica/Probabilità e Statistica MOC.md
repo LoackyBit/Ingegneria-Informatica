@@ -7,7 +7,7 @@ aliases: ["Probabilità e Statistica MOC", "Elementi di Calcolo delle Probabilit
 source: original
 title: "Probabilità e Statistica MOC"
 date: '2026-09-24'
-updated: 2026-10-26T18:25
+updated: 2026-10-28T08:07
 tags: [education/university, education/moc, math/probability, math/statistics]
 summary: "Hub del corso universitario di Elementi di Calcolo delle Probabilità e Statistica per Ingegneria Informatica, con scheda insegnamento e matrice PACRAR."
 ---

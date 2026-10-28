@@ -7,7 +7,7 @@ aliases: ["Ingegneria Informatica 2026-27 MOC", "Ingegneria Informatica 2026 - 2
 source: original
 title: "Ingegneria Informatica 2026/27"
 date: '2026-09-25'
-updated: 2026-10-26T18:25
+updated: 2026-10-28T08:07
 tags: [education/university, education/moc, tech/engineering, tech/cs]
 summary: "Hub generale e matrice PACRAR per la Laurea Triennale in Ingegneria Informatica 2026-27 (Sapienza Università di Roma, 1° Anno, 1° Semestre)."
 ---
@@ -64,8 +64,9 @@ La preparazione accademica segue il framework metodologico PACRAR (*Pianificazio
 | Lezione / Argomento | P | A | C | R | A | R | Stato / Sintesi |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
 | [[01 - Teoria degli Insiemi, Spazio Campionario e Prime Nozioni di Probabilità]] | [x] | [x] | [x] | [x] | [ ] | [ ] | Spazio campionario $\Omega$, algebra degli eventi, Eulero-Venn e cardinalità |
-| [[02 - Insieme delle Parti, Assiomi della Probabilità e Spazi Finiti]] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |  |
-| [[15 - Variabili di Bernoulli, Binomiali, Ipergeometriche ed Esempi di Valore Atteso]] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |  |
+| [[02 - Insieme delle Parti, Assiomi della Probabilità e Spazi Finiti]] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | Assiomi di Kolmogorov, continuità della probabilità e spazi finiti equiprobabili |
+| [[13 - Variabili Aleatorie Discrete, Densità di Probabilità, Valore Atteso e Distribuzione Geometrica]] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | Variabili discrete, densità PMF, indicatrici di Bernoulli, valore atteso lineare e distribuzione geometrica |
+| [[15 - Variabili di Bernoulli, Binomiali, Ipergeometriche ed Esempi di Valore Atteso]] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | Modelli di Bernoulli, binomiale, ipergeometrica senza reinserimento ed equità del gioco |
 
 ---
 
